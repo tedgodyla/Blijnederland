@@ -1,0 +1,222 @@
+/* ------------------------------*/
+/* ---------- MAIN ---------- */
+/* ------------------------------*/
+
+html {
+	font-size: 1em;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	background: #ccc;
+}
+
+/* ------------------------------*/
+/* ---------- TEXT SETTINGS ---------- */
+/* ------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0em 0em 0em;
+	line-height: 1.2em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.9em; }
+h6 { font-size: 0.8em; }
+
+p,
+li,
+blockquote {
+	line-height: 1.6em;
+}
+
+em { font-style: italic; }
+small { font-size: 0.8em; }
+
+a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+/* ------------------------------*/
+/* ---------- PROFILE ---------- */
+/* ------------------------------*/
+
+.profile {
+	position: fixed;
+	top: 0px; left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	color: #fff;
+}
+
+/* ------------------------------*/
+/* ---------- QUESTIONS ---------- */
+/* ------------------------------*/
+
+.q-overlay {
+	position: fixed;
+	z-index: 9;
+	top: 0px; left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(240,240,240,0.95);
+}
+
+.q-container {
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	right: 1em;
+	left: 50%;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+}
+
+.q-container .q-group {
+	display: block;
+	border-top: #ccc 1px solid;
+	padding: 1em;
+}
+
+.q-container .q-group h2 {
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #bbb;
+}
+
+.q-container .q-group.active h2 {
+	color: #000;
+}
+
+.q-container .q-group.done h2 {
+	color: #00f;
+	cursor: pointer;
+}
+
+.q-container .q-group .q-group-questions { 
+	display: none;
+	margin-top: 1.2em;
+}
+
+.q-container .q-group.active .q-group-questions { display: block; }
+
+/* ------------------------------*/
+/* ---------- SUBJECT ---------- */
+/* ------------------------------*/
+
+.subject-container {
+	position: absolute;
+	padding: 2em;
+	top: 1em;
+	bottom: 1em;
+	right: 1em;
+	left: 50%;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+}
+
+/* ------------------------------*/
+/* ---------- HEADER ---------- */
+/* ------------------------------*/
+
+
+
+/* ------------------------------*/
+/* ---------- NAVIGATION ---------- */
+/* ------------------------------*/
+
+
+/* ------------------------------*/
+/* ---------- CONTAINER ---------- */
+/* ------------------------------*/
+
+section.container {
+	position: relative;
+	width: 1080px;
+	padding: 0 1em;
+}
+
+/* ------------------------------*/
+/* ---------- SPECIAL ---------- */
+/* ------------------------------*/
+
+.clear {
+	clear: both;
+}
+
+/* ------------------------------*/
+/* ---------- STYLES ---------- */
+/* ------------------------------*/
+
+.p10 { padding: 1em; }
+.p15 { padding: 1.5em; }
+.p20 { padding: 2em; }
+
+.m10 { margin: 1em; }
+.m15 { margin: 1.5em; }
+.m20 { margin: 2em; }
+
+/* ------------------------------*/
+/* ---------- JQUERY UI ---------- */
+/* ------------------------------*/
+
+.ui-slider {
+	background: #bbb;
+	margin: 1em 0;
+	cursor: pointer;
+}
+
+.ui-slider-horizontal {
+	height: 0.5em;
+}
+
+.ui-slider .ui-slider-handle {
+	background: #000;
+	border-radius: 50%;
+	outline: none;
+	cursor: move;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: -0.4em;
+}
+
+/* ------------------------------*/
+/* ---------- MEDIAQUERIES ---------- */
+/* ------------------------------*/
+
+@media only screen and (max-width: 1260px) {
+	section.container { width: 1024px; }
+}
+
+@media only screen and (max-width: 1080px) {
+	section.container { width: 940px; }
+}
+
+@media only screen and (max-width: 960px) {
+	section.container { width: auto; }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 648px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}

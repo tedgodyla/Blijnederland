@@ -1,0 +1,59 @@
+{
+	"profile": {
+		"naam": {
+			"label": "Wat is je naam?",
+			"type": "text"
+		},
+		"leeftijd": {
+			"label": "Wat is je leeftijd?",
+			"type": "number"
+		},
+		"geslacht": {
+			"type": "radio",
+			"options": ["Man", "Vrouw"]
+		}
+	},
+	"questions": {
+		"social": {
+			"familie": {
+				"label": "Welke cijfer geef je de band met je familie?",
+				"type": "slider",
+				"range": { "min": 0, "max": 10 }
+			},
+			"vrienden": {
+				"label": "Welke cijfer geef je de band met je vrienden?",
+				"type": "slider",
+				"range": { "min": 0, "max": 10 }
+			},
+			"vrijwilligerswerk": {
+				"label": "Doe je vrijwilligerswerk?",
+				"type": "radio",
+				"options": ["Ja", "Nee"]
+			}
+		},
+		"religie": {
+			"welke" : {
+				"label": "Tot welke religie behoor je?",
+				"type": "select",
+				"options": ["Geen", "Rooms-katholiek", "Nederlands hervormd", "Gereformeerd", "Protestantse Kerk", "Islam", "Boeddhisme", "Anders"]
+			},
+			"waarde" : {
+				"label": "Hoeveel waarde hecht je aan religie?",
+				"type": "slider",
+				"range": { "min": 0, "max": 10 }
+			}
+		},
+		"gelukkigheid": {
+			"geluk" : {
+				"label": "Hoe gelukkig ben je met je leven?",
+				"type": "select",
+				"options": ["Helemaal niet gelukkig", "Niet zo gelukkig", "Redelijk gelukkig", "Zeer gelukkig", "Weet niet"]
+			},
+			"tevreden" : {
+				"label": "Hoe tevreden ben je?",
+				"type": "select",
+				"options": ["Ontevreden", "Niet zo tevreden", "Redelijk tevreden", "Zeer tevreden", "Weet niet"]
+			}
+		}
+	}
+}
