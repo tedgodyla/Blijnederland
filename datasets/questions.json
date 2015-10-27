@@ -1,11 +1,9 @@
 {
 	"profile": {
 		"naam": {
-			"label": "Wat is je naam?",
 			"type": "text"
 		},
 		"leeftijd": {
-			"label": "Wat is je leeftijd?",
 			"type": "number"
 		},
 		"geslacht": {

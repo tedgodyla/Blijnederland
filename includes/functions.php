@@ -21,6 +21,29 @@ function pretty_dump($data)
 	echo "</pre><br>";
 }
 
+function print_submit($str, $align = true)
+{
+	ob_start();
+
+	if ($align)
+	{
+		echo '<div class="text-center">';
+	}
+
+	echo '<input type="submit" value="' . $str . '">';
+	
+	if ($align)
+	{
+		echo '</div>';
+	}
+
+	$output = ob_get_contents();
+
+	ob_end_clean();
+
+	return $output;
+}
+
 function print_question ($questions, $propname)
 {
 	$question = $questions->$propname;
@@ -110,7 +133,8 @@ function print_question ($questions, $propname)
 				<?php
 				$first_option = true;
 				foreach ($question->options as $option) {
-					$checked = ($first_option) ? " checked": "";
+					//$checked = ($first_option) ? " checked": "";
+					$checked = ($first_option) ? "": "";
 					?>
 					<label for="<?= $option; ?>"><?= $option; ?></label>
 					<input id="<?= $option; ?>" value="<?= $option; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>

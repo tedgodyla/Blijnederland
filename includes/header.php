@@ -7,7 +7,8 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 	<link href="lib/css/reset.css" rel="stylesheet" type="text/css">
 	<link href="lib/css/jquery-ui.css" rel="stylesheet" type="text/css">
 	<link href="lib/css/jquery-ui.structure.css" rel="stylesheet" type="text/css">
@@ -28,10 +29,44 @@
 	<?php include_once("analyticstracking.php") ?>
 </head>
 <body>
+	<header id="header" class="container">
+		<div class="logo">
+			<svg class="logo" x="0px" y="0px" width="222px" height="76" viewBox="0 0 446 153" >
+				<g id="titel">
+					<text transform="matrix(1 0 0 1 7 68)" fill="#bebbb0" font-family="'Pacifico'" font-size="72">Blij Nederland</text>
+				</g>
+				<g id="lach">
+					<path fill="none" stroke="#bebbb0" stroke-width="14" stroke-miterlimit="10" d="M28,98c0,0,155,106,393,0"/>
+					<g>
+						<g>
+							<g>
+								<path fill="#bebbb0" d="M26.524,83.215c-4.207,9.392-8.793,18.607-13,28c-1.671,3.731-1.116,8.032,2.691,10.261
+									c3.238,1.897,8.589,1.042,10.261-2.69c4.207-9.392,8.793-18.607,13-28c1.671-3.731,1.116-8.032-2.691-10.261
+									C33.547,78.627,28.196,79.482,26.524,83.215L26.524,83.215z"/>
+							</g>
+						</g>
+					</g>
+					<g>
+						<g>
+							<path fill="#bebbb0" d="M409.5,89c1.136,8.491,2.938,16.752,5.268,24.994c2.627,9.293,17.101,5.34,14.465-3.987
+								c-1.948-6.893-3.781-13.895-4.732-21.006c-0.542-4.051-3.002-7.5-7.5-7.5C413.323,81.5,408.957,84.937,409.5,89L409.5,89z"/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</div>
+	</header>
+	
 <?php
 	$question_json = file_get_contents("datasets/questions.json");
 	$question_json = json_decode($question_json);
 
+	include_once('includes/intro.php');
+
+	include_once('includes/profile.php');
+
+	include_once('includes/passport.php');
 	include_once('includes/questions.php');
+
 	include_once('includes/subjectdata.php');
 ?>
