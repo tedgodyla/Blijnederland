@@ -43,39 +43,34 @@
 				"label": "Heb jij een baan?",
 				"type": "radio",
 				"options": ["Ja", "Nee"]
-				}
-			},
+			}
+		},
 
 		"sport": {
 			"waarde": {
 				"label": "Hoevaak sport je?",
 				"type": "radio",
 				"options": ["Dagelijks", "Wekelijks", "Minder dan 1 keer per week"]
-
-				}
-			},
+			}
+		},
 
 		"participatie": {
 			"stemmen": {
 				"label": "Stem jij voor de verkiezingen?",
 				"type": "radio",
 				"options": ["Ja", "Nee"]
-
-				},
-
+			},
 			"veiligheid": {
 				"label": "Hoe veilig voel jij je in Nederland?",
 				"type": "slider",
-				"range": {"min": 0,"max": 10}
-				},
-			"vrijwilligerswerk":{
+				"range": { "min": 0, "max": 10 }
+			},
+			"vrijwilligerswerk": {
 				"label": "Doe je aan vrijwilligerswerk?",
 				"type": "radio",
 				"options": ["Ja", "Nee"]
-					}	
-				}
-			},
-
+			}
+		},
 		"gelukkigheid": {
 			"geluk" : {
 				"label": "Hoe gelukkig ben je met je leven?",
@@ -89,3 +84,4 @@
 			}
 		}
 	}
+}
