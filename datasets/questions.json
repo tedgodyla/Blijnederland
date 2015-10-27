@@ -21,18 +21,14 @@
 				"range": { "min": 0, "max": 10 }
 			},
 			"vrienden": {
-				"label": "Welke cijfer geef je de band met je vrienden?",
+				"label": "Welke cijfer geef je de band met je  (beste) vrienden?",
 				"type": "slider",
 				"range": { "min": 0, "max": 10 }
-			},
-			"vrijwilligerswerk": {
-				"label": "Doe je vrijwilligerswerk?",
-				"type": "radio",
-				"options": ["Ja", "Nee"]
 			}
 		},
+
 		"religie": {
-			"welke" : {
+			"welke": {
 				"label": "Tot welke religie behoor je?",
 				"type": "select",
 				"options": ["Geen", "Rooms-katholiek", "Nederlands hervormd", "Gereformeerd", "Protestantse Kerk", "Islam", "Boeddhisme", "Anders"]
@@ -43,6 +39,45 @@
 				"range": { "min": 0, "max": 10 }
 			}
 		},
+
+		"werk": {
+			"baan": {
+				"label": "Heb jij een baan?",
+				"type": "radio",
+				"options": ["Ja", "Nee"]
+				}
+			},
+
+		"sport": {
+			"waarde": {
+				"label": "Hoevaak sport je?",
+				"type": "radio",
+				"options": ["Dagelijks", "Wekelijks", "Minder dan 1 keer per week"]
+
+				}
+			},
+
+		"participatie": {
+			"stemmen": {
+				"label": "Stem jij voor de verkiezingen?",
+				"type": "radio",
+				"options": ["Ja", "Nee"]
+
+				},
+
+			"veiligheid": {
+				"label": "Hoe veilig voel jij je in Nederland?",
+				"type": "slider",
+				"range": {"min": 0,"max": 10}
+				},
+			"vrijwilligerswerk":{
+				"label": "Doe je aan vrijwilligerswerk?",
+				"type": "radio",
+				"options": ["Ja", "Nee"]
+					}	
+				}
+			},
+
 		"gelukkigheid": {
 			"geluk" : {
 				"label": "Hoe gelukkig ben je met je leven?",
@@ -56,4 +91,3 @@
 			}
 		}
 	}
-}
