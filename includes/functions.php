@@ -44,9 +44,14 @@ function print_submit($str, $align = true)
 	return $output;
 }
 
-function print_question ($questions, $propname)
+function print_question ($questions, $propname, $options = false)
 {
 	$question = $questions->$propname;
+
+	if (!is_array($options))
+	{
+		$options = array();
+	}
 
 	ob_start();
 
@@ -133,11 +138,46 @@ function print_question ($questions, $propname)
 				<?php
 				$first_option = true;
 				foreach ($question->options as $option) {
-					//$checked = ($first_option) ? " checked": "";
-					$checked = ($first_option) ? "": "";
+					$checked = "";
+					if ($options["checked"] == true) {
+						$checked = ($first_option) ? " checked": "";
+					}
 					?>
-					<label for="<?= $option; ?>"><?= $option; ?></label>
 					<input id="<?= $option; ?>" value="<?= $option; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
+					<label for="<?= $option; ?>"><?= $option; ?></label>
+					<?php
+					$first_option = false;
+				}
+			}
+
+			if ($type == "radiobutton")
+			{
+				$radiooptions = array();
+
+				$i = 0;
+				foreach ($question->options as $option)
+				{
+					$radiooptions[$i] = array($option);
+					$i++;
+				}
+
+				$i = 0;
+				foreach ($question->icons as $icon)
+				{
+					array_push($radiooptions[$i], $icon);
+					$i++;
+				}
+
+				?>
+				<?php
+				$first_option = true;
+				foreach ($radiooptions as $option) {
+					$checked = ($first_option) ? " checked": "";
+					?>
+					<div class="radiobutton">
+						<input id="<?= $option[0]; ?>" value="<?= $option[0]; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
+						<label for="<?= $option[0]; ?>" class="icon icon-<?= $option[1]; ?>"></label>
+					</div>
 					<?php
 					$first_option = false;
 				}

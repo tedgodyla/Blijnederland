@@ -7,8 +7,9 @@
 			"type": "number"
 		},
 		"geslacht": {
-			"type": "radio",
-			"options": ["Man", "Vrouw"]
+			"type": "radiobutton",
+			"options": ["Man", "Vrouw"],
+			"icons": ["male", "female"]
 		}
 	},
 	"questions": {

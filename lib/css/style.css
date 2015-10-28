@@ -65,12 +65,52 @@ input[type="submit"] {
     border-radius: 1em;
     padding: 0.4em 2em;
     display: inline-block;
-    margin: auto;
     cursor: pointer;
 }
 
 input {
+	font-family: 'Roboto Slab', serif;
+    background: #fff;
+    font-size: 1em;
+    color: #4abea4;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.2em 0.6em;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+}
 
+input:not([type="submit"]):focus {
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.15) inset;
+}
+
+.radiobutton {
+	display: inline-block;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.radiobutton input {
+	display: none;
+}
+
+.radiobutton label {
+	display: inline-block;
+    background: #3eac93;
+    color: #b9e7d4;
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radiobutton input:checked + label {
+	background: #fff;
+    color: #4abea4;
 }
 
 /* ------------------------------*/
@@ -97,8 +137,16 @@ input {
 /* ---------- HEADER ---------- */
 /* ------------------------------*/
 
-header .logo {
-	padding-top: 1em;
+header > .logo {
+	padding: 1.5em 0 4em;
+}
+
+header svg.logo {
+	display: block;
+    margin: auto;
+    position: relative;
+    height: 50px;
+    width: 150px;
 }
 
 /* ------------------------------*/
@@ -131,16 +179,25 @@ header .logo {
 }
 
 .profile .profile-wrap > .left #keuze {
-	width: 106px;
-    height: 322px;
+	width: 123px;
+    height: 370px;
 }
 
 .profile .profile-wrap > .right {
-	width: 27em;
+	width: 25em;
 	float: right;
 }
 
-.profile .profile-wrap > .right .card {
+.profile .profile-wrap > .right h1 {
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
+}
+
+.profile .profile-wrap > .right p {
+	margin-bottom: 1em;
+}
+
+.profile .card {
 	background: #4abea4;
 	color: #b9e7d4;
 	font-family: 'Roboto Slab', serif;
@@ -148,22 +205,53 @@ header .logo {
 	border-radius: 1em;
 }
 
-.profile .profile-wrap > .right .card h2 {
+.profile .card h2 {
 	color: #fff;
     font-size: 1.3em;
     text-align: center;
 }
 
-.profile .profile-wrap > .right .card p {
+.profile .card p {
 	display: block;
     font-size: 0.8em;
     text-align: center;
 }
 
-.profile .profile-wrap > .right .card .line {
+.profile .card .line {
 	height: 0px;
 	margin: 0.8em 0;
     border-bottom: #5ec6af solid 1px;
+}
+
+.profile .q-group-questions .left {
+	float: left;
+	width: 25%;
+	margin-right: 5%;
+}
+
+.profile .q-group-questions .left .q {
+	margin-top: 1em;
+}
+
+.profile .q-group-questions .right {
+	font-weight: 300;
+	float: right;
+	width: 70%;
+}
+
+.profile .q-group-questions .right .q {
+	display: inline-block;
+	margin: 0.2em 0.3em;
+}
+
+.profile .q-group-questions .right input {
+	display: inline-block;
+	font-weight: 300;
+	width: 8em;
+}
+
+.profile .q-group-questions .right input[type="number"] {
+	width: 3.5em;
 }
 
 /* ------------------------------*/
@@ -295,15 +383,15 @@ header .logo {
 /* ------------------------------*/
 
 @media only screen and (max-width: 1260px) {
-	section.container { width: 1024px; }
+	.container { width: 1024px; }
 }
 
 @media only screen and (max-width: 1080px) {
-	section.container { width: 940px; }
+	.container { width: 940px; }
 }
 
 @media only screen and (max-width: 960px) {
-	section.container { width: auto; }
+	.container { width: auto; }
 }
 
 @media only screen and (max-width: 768px) {

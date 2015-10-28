@@ -8,11 +8,12 @@
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-	<link href="lib/css/reset.css" rel="stylesheet" type="text/css">
-	<link href="lib/css/jquery-ui.css" rel="stylesheet" type="text/css">
-	<link href="lib/css/jquery-ui.structure.css" rel="stylesheet" type="text/css">
-	<link href="lib/css/style.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="lib/css/reset.css" rel="stylesheet">
+	<link href="lib/css/jquery-ui.css" rel="stylesheet">
+	<link href="lib/css/jquery-ui.structure.css" rel="stylesheet">
+	<link href="lib/css/icons.css" rel="stylesheet">
+	<link href="lib/css/style.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="lib/js/html5shim.js"></script>
 	<![endif]-->
