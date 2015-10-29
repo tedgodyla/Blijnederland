@@ -14,7 +14,7 @@
 	$questions = $question_json->profile;
 ?>
 
-<section class="profile container">
+<section class="profile container pushtop">
 	<section class="profile-wrap">
 		<div class="left">
 			<?php include_once("includes/svg/keuze.php"); ?>

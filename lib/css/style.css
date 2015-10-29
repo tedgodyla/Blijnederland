@@ -56,10 +56,15 @@ a {
 /* ---------- INPUT ---------- */
 /* ------------------------------*/
 
+label {
+	display: block;
+}
+
 input[type="submit"] {
 	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
 	background: #f39a3c;
-	font-size: 1em;
+	font-size: 0.9em;
     color: #fff;
     border: none;
     border-radius: 1em;
@@ -137,16 +142,26 @@ input:not([type="submit"]):focus {
 /* ---------- HEADER ---------- */
 /* ------------------------------*/
 
-header > .logo {
-	padding: 1.5em 0 4em;
+header {
+	position: fixed;
+	width: 100%;
 }
 
 header svg.logo {
+	position: relative;
 	display: block;
-    margin: auto;
-    position: relative;
     height: 50px;
     width: 150px;
+    padding-top: 2em;
+    margin: auto;
+}
+
+header.logoleft svg.logo {
+	position: relative;
+	display: block;
+    height: 50px;
+    width: 150px;
+    margin: 0px;
 }
 
 /* ------------------------------*/
@@ -259,59 +274,67 @@ header svg.logo {
 /* ------------------------------*/
 
 .passport {
-	position: fixed;
-	top: 1em;
-	bottom: 1em;
-	right: 50%;
-	left: 1em;
-	margin-right: 0.5em;
 	background: #fff;
-	box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+    position: relative;
+    width: 50%;
+    height: 100px;
 }
 
 /* ------------------------------*/
 /* ---------- QUESTIONS ---------- */
 /* ------------------------------*/
 
-.q-container {
-	position: fixed;
-	top: 1em;
-	bottom: 1em;
-	right: 1em;
-	left: 50%;
-	margin-left: 0.5em;
-	background: #fff;
-	box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+.questions {
+	position: relative;
+    width: 50%;
+    float: right;
+    background: #b9e7d4;
+    padding: 1em 0;
+    border-radius: 1em;
+    top: 1em;
 }
 
-.q-container .q-group {
+.questions .q-group {
 	display: block;
-	border-top: #ccc 1px solid;
 	padding: 1em;
 }
 
-.q-container .q-group h2 {
+.questions .q-group.active {
+	background: #4abea4;
+	color: #fff;
+}
+
+.questions .q-group h2 {
 	display: block;
 	font-size: 1.2em;
 	font-weight: bold;
-	color: #bbb;
+	color: #4abea4;
+	text-transform: capitalize;
 }
 
-.q-container .q-group.active h2 {
-	color: #000;
-}
-
-.q-container .q-group.done h2 {
-	color: #00f;
+.questions .q-group.done h2 {
+	color: #31806e;
 	cursor: pointer;
 }
 
-.q-container .q-group .q-group-questions { 
+.questions .q-group.active h2 {
+	color: #fff;
+    padding-bottom: 1em;
+    border-bottom: #5ec6af solid 1px;
+}
+
+.questions .q-group .q-group-questions { 
 	display: none;
 	margin-top: 1.2em;
 }
 
-.q-container .q-group.active .q-group-questions { display: block; }
+.questions .q-group .q-group-questions .q {
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: #5ec6af solid 1px;
+}
+
+.questions .q-group.active .q-group-questions { display: block; }
 
 /* ------------------------------*/
 /* ---------- SUBJECT ---------- */
@@ -353,29 +376,91 @@ header svg.logo {
 .m15 { margin: 1.5em; }
 .m20 { margin: 2em; }
 
+.pushtop { top: 9em; }
+
 /* ------------------------------*/
 /* ---------- JQUERY UI ---------- */
 /* ------------------------------*/
 
 .ui-slider {
-	background: #bbb;
+	background: #b9e7d4;
 	margin: 1em 0;
 	cursor: pointer;
+	border-radius: 1em;
 }
 
 .ui-slider-horizontal {
-	height: 0.5em;
+	height: 0.3em;
 }
 
 .ui-slider .ui-slider-handle {
-	background: #000;
+	background: #4abea4;
+    border: #fff solid 0.4em;
+    width: 0.4em;
+    height: 0.38em;
 	border-radius: 50%;
 	outline: none;
 	cursor: move;
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-	top: -0.4em;
+	top: -0.45em;
+}
+
+/* ------------------------------*/
+/* ---------- MENU ---------- */
+/* ------------------------------*/
+
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+	background: #48a2d5;
+	color: #fff;
+}
+
+.ui-selectmenu-open {
+	display: block;
+	border-radius: 3px;
+	background: #fff;
+	color: #606060;
+
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	
+	overflow: hidden;
+}
+
+.ui-selectmenu-button {
+	display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    margin-top: 1em;
+    background: #fff;
+    color: #333;
+    border-radius: 0.5em;
+    outline: none;
+    width: auto !important;
+    min-width: 50%;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background-image: url(../images/dropdown.png);
+    background-size: auto 20%;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.ui-selectmenu-button span.ui-selectmenu-text {
+	text-align: left;
+	padding: 5px 8px;
+	display: block;
+	line-height: 1.4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #4abea4;
 }
 
 /* ------------------------------*/

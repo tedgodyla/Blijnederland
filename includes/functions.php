@@ -116,7 +116,7 @@ function print_question ($questions, $propname, $options = false)
 			{
 				?>
 				<label for="<?= $propname; ?>"><?= $question->label; ?></label>
-				<select id="<?= $propname; ?>" name="<?= $propname; ?>">
+				<select id="<?= $propname; ?>" name="<?= $propname; ?>" class="select">
 					<?php
 					$first_option = true;
 					foreach ($question->options as $option) {

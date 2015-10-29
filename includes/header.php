@@ -30,8 +30,8 @@
 	<?php include_once("analyticstracking.php") ?>
 </head>
 <body>
-	<header id="header" class="container">
-		<div class="logo">
+	<header id="header">
+		<div class="container">
 			<svg class="logo" x="0px" y="0px" width="222px" height="76" viewBox="0 0 446 153" >
 				<g id="titel">
 					<text transform="matrix(1 0 0 1 7 68)" fill="#bebbb0" font-family="'Pacifico'" font-size="72">Blij Nederland</text>
@@ -66,8 +66,7 @@
 
 	include_once('includes/profile.php');
 
-	include_once('includes/passport.php');
-	include_once('includes/questions.php');
+	include_once('includes/fill-card.php');
 
 	include_once('includes/subjectdata.php');
 ?>
