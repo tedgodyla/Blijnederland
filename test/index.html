@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <style type="text/css">
+      svg {
+        font-size: 16px;
+      }
+
+      rect {
+        fill: #d24633;
+        cursor: pointer; 
+      }
+
+      .axis {
+        shape-rendering: crispEdges;
+      }
+
+      .axis path, .axis line {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.js"></script>
+    <script type="text/javascript">
+
+      var m = [40, 0, 0, 100], // top right bottom left
+          w = 400, // width
+          h = 400, // height
+          x = d3.scale.linear().range([0, w]),
+          y = 20;
+
+      var hierarchy = d3.layout.partition()
+          .value(function(d) { return d.size; });
+
+      var xAxis = d3.svg.axis()
+          .scale(x)
+          .orient("top");
+
+      var svg = d3.select("body").append("svg:svg")
+          .attr("width", w + m[1] + m[3])
+          .attr("height", h + m[0] + m[2])
+        .append("svg:g")
+          .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+      svg.append("svg:g")
+          .attr("class", "x axis");
+
+      d3.json("flare.json", function(root) {
+        hierarchy.nodes(root);
+        console.log(root);
+        var min = 0;
+        var max = root.value;
+        var max = 10;
+        x.domain([min, max]).nice();
+        bar(root, 0);
+      });
+
+      function openSubject(d) {
+        console.log("open subject:", d.name);
+      }
+
+      function updateBar() {
+        console.log("update bar")
+      }
+
+      // Creates a set of bars for the given data node, at the specified index.
+      function bar(d, i) {
+        var bar = svg.insert("svg:g", ".y.axis")
+            .attr("class", "enter")
+            .attr("transform", "translate(0,5)")
+          .selectAll("g")
+            .data(d.children)
+          .enter().append("svg:g")
+            .on("click", openSubject);
+
+        bar.append("svg:text")
+            .attr("x", -m[3])
+            .attr("y", y / 2)
+            .attr("dy", ".35em")
+            .attr("text-anchor", "start")
+            .text(function(d) { return d.name; });
+
+        bar.append("svg:rect")
+            .attr("width", function(d) { return x(d.value); })
+            .attr("height", y)
+
+        // Update the x-axis.
+        svg.selectAll(".x.axis")
+            .call(xAxis);
+
+        bar
+          .attr("transform", function(d, i) { 
+            var translateY = y / 2 + y * i * 1.8;
+            console.log(translateY);
+            return "translate(0," + translateY + ")";
+          });       
+
+        return bar;
+      }
+    </script>
+  </body>
+</html>

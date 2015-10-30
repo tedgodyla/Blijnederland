@@ -138,13 +138,12 @@ function print_question ($questions, $propname, $options = false)
 				<?php
 				$first_option = true;
 				foreach ($question->options as $option) {
-					$checked = "";
-					if ($options["checked"] == true) {
-						$checked = ($first_option) ? " checked": "";
-					}
+					$checked = ($first_option) ? " checked": "";
 					?>
-					<input id="<?= $option; ?>" value="<?= $option; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
-					<label for="<?= $option; ?>"><?= $option; ?></label>
+					<div class="radio">
+						<input id="<?= $option; ?>" value="<?= $option; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
+						<label for="<?= $option; ?>"><?= $option; ?></label>
+					</div>
 					<?php
 					$first_option = false;
 				}
@@ -176,7 +175,10 @@ function print_question ($questions, $propname, $options = false)
 					?>
 					<div class="radiobutton">
 						<input id="<?= $option[0]; ?>" value="<?= $option[0]; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
-						<label for="<?= $option[0]; ?>" class="icon icon-<?= $option[1]; ?>"></label>
+						<label for="<?= $option[0]; ?>">
+							<div class="bg"></div>
+							<div class="icon icon-<?= $option[1]; ?>"></div>
+						</label>
 					</div>
 					<?php
 					$first_option = false;
