@@ -26,20 +26,22 @@
                 $answerid = GUID();
                 $result["data"] = $answerid;
                 
-                $file = "datasets/answers.json";
-                $json = json_decode(@file_get_contents($file), true);
+                $filename = "datasets/answers.json";
 
-                if ($json === FALSE) {
-                    $result["message"] = "unable to open the file " . $file . ". Please change the permissions.";
-                }
+                $json = json_decode(file_get_contents($filename), true);
 
-                else
+                if (is_writable($filename))
                 {
                     $json["answers"][$answerid] = $answers;
 
-                    file_put_contents($file, json_encode($json));
+                    file_put_contents($filename, json_encode($json));
 
                     $result["succes"] = true;
+                } 
+
+                else
+                {
+                    $result["message"] = "failed to open the file answers.json. Please, change the permission of that file to read and write.";
                 }
             }
         }

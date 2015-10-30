@@ -52,22 +52,26 @@
       svg.append("svg:g")
           .attr("class", "x axis");
 
-      d3.json("flare.json", function(root) {
-        hierarchy.nodes(root);
-        console.log(root);
+      d3.json("flare.json", function(data) {
+        hierarchy.nodes(data);
+        console.log(data);
+        setDomain(data);
+        bar(data, 0);
+      });
+
+      function setDomain(data) {
         var min = 0;
-        var max = root.value;
+        var max = data.value;
         var max = 10;
         x.domain([min, max]).nice();
-        bar(root, 0);
-      });
+      }
 
       function openSubject(d) {
         console.log("open subject:", d.name);
       }
 
       function updateBar() {
-        console.log("update bar")
+        console.log("update bar");
       }
 
       // Creates a set of bars for the given data node, at the specified index.
@@ -89,7 +93,7 @@
 
         bar.append("svg:rect")
             .attr("width", function(d) { return x(d.value); })
-            .attr("height", y)
+            .attr("height", y);
 
         // Update the x-axis.
         svg.selectAll(".x.axis")
