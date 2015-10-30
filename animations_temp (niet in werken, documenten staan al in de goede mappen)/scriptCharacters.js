@@ -95,7 +95,7 @@ function profilePhoto() {
 
 // ----------FUNCTIONS----------
 // shoeTap();
-// blink();
+blink();
 // angryBrow();
 // sleep();
 // awake();
@@ -103,4 +103,4 @@ function profilePhoto() {
 // watchBlink();
 // tieWiggle();
 // mustashWiggle();
-profilePhoto();
+// profilePhoto();
