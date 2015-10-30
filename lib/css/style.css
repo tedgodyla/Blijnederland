@@ -146,6 +146,26 @@ input:not([type="submit"]):focus {
 	color: #4abea4;
 }
 
+.radiobutton label.labeltext {
+	font-size: 1em;
+	color: #b9e7d4;
+	width: auto;
+	height: auto;
+	border-radius: 1em;
+	padding: .5em 1em;
+	margin-top: 1em;
+}
+.radiobutton input:checked + label .labelanswer {
+	color: #4abea4;
+	position: relative;
+	z-index: 2;
+}
+
+.radiobutton label.labeltext .bg {
+	border-radius: 1em;
+	z-index: 1;
+}
+
 /* ------------------------------*/
 /* ---------- INTRO ---------- */
 /* ------------------------------*/

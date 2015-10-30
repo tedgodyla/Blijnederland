@@ -134,19 +134,25 @@ function print_question ($questions, $propname, $options = false)
 			if ($type == "radio")
 			{
 				?>
-				<span><?= $question->label; ?></span>
+				<span><?= $question->label; ?></span><br>
 				<?php
 				$first_option = true;
 				foreach ($question->options as $option) {
 					$checked = ($first_option) ? " checked": "";
 					?>
-					<div class="radio">
+					<div class="radiobutton">
 						<input id="<?= $option; ?>" value="<?= $option; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
-						<label for="<?= $option; ?>"><?= $option; ?></label>
+						<label class="labeltext" for="<?= $option; ?>">
+						<div class="bg"></div>
+						<div class="labelanswer"><?= $option; ?></div>
+						</label>
 					</div>
 					<?php
 					$first_option = false;
 				}
+				?>
+				<div class="clear"></div>
+				<?php
 			}
 
 			if ($type == "radiobutton")
