@@ -15,14 +15,14 @@
 	"questions": {
 		"social": {
 			"familie": {
-				"label": "Welke cijfer geef je de band met je familie?",
-				"type": "slider",
-				"range": { "min": 0, "max": 10 }
+				"label": "Hoe vaak spreek je af met je (beste) vrienden?",
+				"type": "radio",
+				"options": [ "Meerdere keren per week", "1 keer per week", "1 keer per maand", "Een paar keer in het jaar" ]
 			},
 			"vrienden": {
-				"label": "Welke cijfer geef je de band met je  (beste) vrienden?",
-				"type": "slider",
-				"range": { "min": 0, "max": 10 }
+				"label": "Hoe vaak zie jouw directe familie?",
+					"type": "radio",
+				"options": [ "Meerdere keren per week", "1 keer per week", "1 keer per maand", "Een paar keer in het jaar" ]
 			}
 		},
 
@@ -33,9 +33,9 @@
 				"options": ["Geen", "Rooms-katholiek", "Nederlands hervormd", "Gereformeerd", "Protestantse Kerk", "Islam", "Boeddhisme", "Anders"]
 			},
 			"waarde" : {
-				"label": "Hoeveel waarde hecht je aan religie?",
-				"type": "slider",
-				"range": { "min": 0, "max": 10 }
+				"label": "Hoe vaak in het jaar ben je bezig met geloof?",
+				"type": "radio",
+				"options": [ "Elke week of meer", "Eens in de maand", "Soms in het jaar", "Nooit"]
 			}
 		},
 
@@ -44,14 +44,27 @@
 				"label": "Heb jij een baan?",
 				"type": "radio",
 				"options": ["Ja", "Nee"]
+			},
+
+			"baan": {
+				"label": "Ben je blij met je inkomen",
+				"type": "radio",
+				"options": ["Nee, het is te weinig", "Ja, maar meer kan altijd", "Ja, ik ben er blij mee!"]
 			}
+
 		},
 
-		"sport": {
+		"Gezondheid": {
 			"waarde": {
 				"label": "Hoevaak sport je?",
 				"type": "radio",
 				"options": ["Dagelijks", "Wekelijks", "Minder dan 1 keer per week"]
+			},
+
+			"Gezond": {
+				"label": "Voel jij je gezond?",
+				"type": "radio",
+				"options": ["Ja", "Ja, maar", "Nee, maar", "Nee"]
 			}
 		},
 
@@ -62,10 +75,17 @@
 				"options": ["Ja", "Nee"]
 			},
 			"veiligheid": {
-				"label": "Hoe veilig voel jij je in Nederland?",
-				"type": "slider",
-				"range": { "min": 0, "max": 10 }
+				"label": "Voel jij je wel eens onveilig op straat?",
+				"type": "radio",
+				"options": ["Ja, best vaak", "Ja, maar alleen 's avonds", "Nee"]
 			},
+
+			"veiligheid": {
+				"label": "Voel jij je wel eens onveilig omdat je in Nederland woont?",
+				"type": "radio",
+				"options": ["Ja, best vaak", "Nee"]
+			},
+
 			"vrijwilligerswerk": {
 				"label": "Doe je aan vrijwilligerswerk?",
 				"type": "radio",
