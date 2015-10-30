@@ -67,7 +67,7 @@
       }
 
       function updateBar() {
-        console.log("update bar")
+        console.log("update bar");
       }
 
       // Creates a set of bars for the given data node, at the specified index.
@@ -89,7 +89,7 @@
 
         bar.append("svg:rect")
             .attr("width", function(d) { return x(d.value); })
-            .attr("height", y)
+            .attr("height", y);
 
         // Update the x-axis.
         svg.selectAll(".x.axis")
