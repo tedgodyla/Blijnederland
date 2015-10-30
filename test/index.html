@@ -52,15 +52,19 @@
       svg.append("svg:g")
           .attr("class", "x axis");
 
-      d3.json("flare.json", function(root) {
-        hierarchy.nodes(root);
-        console.log(root);
+      d3.json("flare.json", function(data) {
+        hierarchy.nodes(data);
+        console.log(data);
+        setDomain(data);
+        bar(data, 0);
+      });
+
+      function setDomain(data) {
         var min = 0;
-        var max = root.value;
+        var max = data.value;
         var max = 10;
         x.domain([min, max]).nice();
-        bar(root, 0);
-      });
+      }
 
       function openSubject(d) {
         console.log("open subject:", d.name);
