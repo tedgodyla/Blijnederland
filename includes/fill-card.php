@@ -18,7 +18,9 @@
 		foreach ($questions as $subject => $question) {
 			?>
 			<article class="q-group">
-				<h2 class="q-group-title"><?= $subject; ?></h2>
+				<h2 class="q-group-title"><?= $subject; ?>  </h2>
+			
+				<div class="arrow"></div> 
 				<section class="q-group-questions">
 					<form action="" method="post" name="<?= $subject; ?>" id="qform" class="qform">
 						<?php
