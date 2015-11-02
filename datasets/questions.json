@@ -13,7 +13,7 @@
 		}
 	},
 	"questions": {
-		"social": {
+		"Social": {
 			"familie": {
 				"label": "Hoe vaak spreek je af met je (beste) vrienden?",
 				"type": "radio",
@@ -36,21 +36,11 @@
 			}
 		},
 
-		"religie": {
+		"Religie": {
 			"welke": {
 				"label": "Tot welke religie behoor je?",
 				"type": "select",
 				"options": ["Geen", "Rooms-katholiek", "Nederlands hervormd", "Gereformeerd", "Protestantse Kerk", "Islam", "Boeddhisme", "Anders"]
-			},
-			"tevreden" : {
-				"label": "Hoe tevreden ben je?",
-				"type": "select",
-				"options": [
-					{ "Ontevreden": 1 }, 
-					{ "Niet zo tevreden": 4 }, 
-					{ "Redelijk tevreden": 7 }, 
-					{ "Zeer tevreden": 10 }
-				]
 			},
 			"waarde" : {
 				"label": "Hoe vaak in het jaar ben je bezig met geloof?",
@@ -64,7 +54,7 @@
 			}
 		},
 
-		"werk": {
+		"Werk": {
 			"baan": {
 				"label": "Heb jij een baan?",
 				"type": "radio",
@@ -110,7 +100,7 @@
 			}
 		},
 
-		"participatie": {
+		"Participatie": {
 			"stemmen": {
 				"label": "Stem jij voor de verkiezingen?",
 				"type": "radio",
@@ -119,25 +109,27 @@
 					{ "Nee": 1 }
 				]
 			},
-			"veiligheid": {
+			"veiligheid_straat": {
 				"label": "Voel jij je wel eens onveilig op straat?",
 				"type": "radio",
 				"options": [
 					{ "Ja, vaak": 1 }, 
 					{ "Ja, maar alleen op bepaalde tijdstippen": 7 },
 					{ "Ja, heel soms": 4 },
-					{ "Nee": 1 }
+					{ "Nee": 10 }
 				]
-			},
+			}
+		},
 
-			"veiligheid": {
+		"Veiligheid": {
+			"veiligheid_nl": {
 				"label": "Voel jij je wel eens onveilig omdat je in Nederland woont?",
 				"type": "radio",
 				"options": [
 					{ "Ja, vaak": 1 }, 
 					{ "Ja, maar alleen op bepaalde tijdstippen": 7 },
 					{ "Ja, heel soms": 4 },
-					{ "Nee": 1 }
+					{ "Nee": 10 }
 				]
 			},
 
@@ -152,7 +144,8 @@
 				]
 			}
 		},
-		"gelukkigheid": {
+
+		"Gelukkigheid": {
 			"geluk" : {
 				"label": "Hoe gelukkig ben je met je leven?",
 				"type": "select",

@@ -178,11 +178,6 @@ svg {
 	font-size: 1em;
 }
 
-rect {
-	fill: #d24633;
-	cursor: pointer; 
-}
-
 .axis {
 	shape-rendering: crispEdges;
 }
@@ -192,6 +187,15 @@ rect {
 	fill: none;
 	stroke: #000;
 	stroke-width: 1;
+}
+
+#statssvg1 rect {
+	fill: #d24633;
+	cursor: pointer; 
+}
+
+#statssvg1 text {
+	fill: #7e4e48;
 }
 
 /* ------------------------------*/
@@ -447,8 +451,9 @@ header.logoleft svg.logo {
 	width: 20em;
 }
 
-.fill-card .card-profile {
+.card-profile {
 	position: relative;
+	z-index: 1;
 	background: #e8c3af;
     padding: 1em;
     height: 8em;
@@ -480,6 +485,22 @@ header.logoleft svg.logo {
     position: relative;
     left: -0.1em;
 }
+
+.card-stats {
+	background: #efd5c7;
+    position: relative;
+    z-index: 0;
+    padding: 2em 1em 1em;
+    top: -1em;
+
+    -webkit-border-bottom-right-radius: 1em;
+	-webkit-border-bottom-left-radius: 1em;
+	-moz-border-radius-bottomright: 1em;
+	-moz-border-radius-bottomleft: 1em;
+	border-bottom-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+}
+
 
 /* ------------------------------*/
 /* ---------- SUBJECT ---------- */
