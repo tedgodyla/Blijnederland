@@ -342,6 +342,10 @@ header.logoleft svg.logo {
 	width: 8em;
 }
 
+.profile .q.fout {
+	background-color: #333;
+}
+
 .profile .q-group-questions .right input[type="number"] {
 	width: 3.5em;
 }
@@ -408,7 +412,8 @@ header.logoleft svg.logo {
 	height: 0; 
 	border-top:10px solid transparent;
 	border-bottom: 10px solid transparent;
-	
+	transition: 0.3s;
+
 	border-left: 10px solid #31806e;
 
 }
@@ -416,11 +421,8 @@ header.logoleft svg.logo {
 
 .questions .q-group.active  .arrow{
 	
-		width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid #b9e7d4;
+	transform: rotate(90deg);
+	transition: 0.7s;
 
 }
 
