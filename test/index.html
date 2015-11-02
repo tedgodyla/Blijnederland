@@ -30,18 +30,18 @@
     <script type="text/javascript" src="d3/d3.layout.js"></script>
     <script type="text/javascript">
 
-      var m = [40, 0, 0, 100], // top right bottom left
-          w = 400, // width
-          h = 400, // height
+      var m = [0, 0, 0, 100], // top right bottom left
+          w = 220, // width
+          h = 320, // height
           x = d3.scale.linear().range([0, w]),
           y = 20;
 
       var hierarchy = d3.layout.partition()
           .value(function(d) { return d.size; });
 
-      var xAxis = d3.svg.axis()
-          .scale(x)
-          .orient("top");
+      // var xAxis = d3.svg.axis()
+      //     .scale(x)
+      //     .orient("top");
 
       var svg = d3.select("body").append("svg:svg")
           .attr("width", w + m[1] + m[3])
@@ -96,12 +96,12 @@
             .attr("height", y);
 
         // Update the x-axis.
-        svg.selectAll(".x.axis")
-            .call(xAxis);
+        // svg.selectAll(".x.axis")
+        //     .call(xAxis);
 
         bar
           .attr("transform", function(d, i) { 
-            var translateY = y / 2 + y * i * 1.8;
+            var translateY = y * i * 1.8;
             console.log(translateY);
             return "translate(0," + translateY + ")";
           });       

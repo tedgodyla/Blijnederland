@@ -35,7 +35,21 @@
 		?>	
 	</section>
 
-	<section class="card">
-		<div id="passsvg1"></div>
+	<section class="card pushtop">
+		<section class="card-profile">
+			<section class="photo">
+				<div id="profilesvg"></div>
+			</section>
+			<section class="info">
+				<span class="icon"></span>
+				<h3>Naam</h3>
+				<h4>Leeftijd</h4>
+			</section>
+		</section>
+		<section class="card-stats">
+			<div id="statssvg1">
+			
+			</div>
+		</section>
 	</section>
 </section>

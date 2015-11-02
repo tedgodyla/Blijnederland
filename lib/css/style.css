@@ -33,8 +33,8 @@ h1 {
 	color: #e34f42;
 }
 h2 { font-size: 2em; font-weight: bold; }
-h3 { font-size: 1.2em; }
-h4 { font-size: 1em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1em; font-weight: 300; }
 h5 { font-size: 0.9em; }
 h6 { font-size: 0.8em; }
 
@@ -167,6 +167,31 @@ input:not([type="submit"]):focus {
 .radiobutton label.labeltext .bg {
 	border-radius: 1em;
 	z-index: 1;
+}
+
+
+/* ------------------------------*/
+/* ---------- SVG ---------- */
+/* ------------------------------*/
+
+svg {
+	font-size: 1em;
+}
+
+rect {
+	fill: #d24633;
+	cursor: pointer; 
+}
+
+.axis {
+	shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	stroke-width: 1;
 }
 
 /* ------------------------------*/
@@ -386,6 +411,48 @@ header.logoleft svg.logo {
 }
 
 .questions .q-group.active .q-group-questions { display: block; }
+
+/* ------------------------------*/
+/* ---------- PROFILE CARD ---------- */
+/* ------------------------------*/
+
+.fill-card .card {
+	position: relative;
+	width: 20em;
+}
+
+.fill-card .card-profile {
+	background: #e8c3af;
+    padding: 1em;
+    height: 8em;
+    border-radius: 1em;
+}
+
+.card-profile .photo {
+	width: 6.5em;
+    height: 7.5em;
+    background: #f3ddd1;
+    border: #fff solid 0.25em;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+.card-profile .photo .profilesvg {
+	display: block;
+	width: 100%;
+}
+
+.card-profile .info {
+	position: absolute;
+	bottom: 1em; left: 9em;
+	color: #d24633;
+}
+
+.card-profile .info .icon {
+	font-size: 1.5em;
+    position: relative;
+    left: -0.1em;
+}
 
 /* ------------------------------*/
 /* ---------- SUBJECT ---------- */

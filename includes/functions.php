@@ -14,6 +14,11 @@ function get_page()
 	return $result;
 }
 
+function get_title($page)
+{
+	return ($page != "homepage") ? $page . " | Blij Nederland" : "Blij Nederland";
+}
+
 function pretty_dump($data)
 {
 	echo "<br><br><pre>";
@@ -180,7 +185,7 @@ function print_question ($questions, $propname, $options = false)
 					$checked = ($first_option) ? " checked": "";
 					?>
 					<div class="radiobutton">
-						<input id="<?= $propname . $option[0]; ?>" value="<?= $option[0]; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
+						<input id="<?= $propname . $option[0]; ?>" value="<?= $option[0]; ?>" data-icon="<?= $option[1]; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
 						<label for="<?= $propname . $option[0]; ?>">
 							<div class="bg"></div>
 							<div class="icon icon-<?= $option[1]; ?>"></div>

@@ -23,10 +23,11 @@
 	<script src="lib/js/functions.js"></script>
 	<script src="lib/js/events.js"></script>
 	<script src="lib/js/d3.min.js"></script>
+    <script src="lib/js/d3.layout.js"></script>
 	<script src="lib/js/animation.js"></script>
 	<script src="lib/js/charts.js"></script>
 	<script src="lib/js/interaction.js"></script>
-	<title><?= $page ?> | Blij Nederland</title>
+	<title><?= get_title($page); ?></title>
 	<?php include_once("analyticstracking.php") ?>
 </head>
 <body>
