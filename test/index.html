@@ -26,6 +26,7 @@
     </style>
   </head>
   <body>
+    <div id="statssvg1"></div>
     <script type="text/javascript" src="d3/d3.js"></script>
     <script type="text/javascript" src="d3/d3.layout.js"></script>
     <script type="text/javascript">
@@ -36,14 +37,11 @@
           x = d3.scale.linear().range([0, w]),
           y = 20;
 
-      var hierarchy = d3.layout.partition()
-          .value(function(d) { return d.size; });
-
       // var xAxis = d3.svg.axis()
       //     .scale(x)
       //     .orient("top");
 
-      var svg = d3.select("body").append("svg:svg")
+      var svg = d3.select("#statssvg1").append("svg:svg")
           .attr("width", w + m[1] + m[3])
           .attr("height", h + m[0] + m[2])
         .append("svg:g")
@@ -52,11 +50,79 @@
       svg.append("svg:g")
           .attr("class", "x axis");
 
-      d3.json("flare.json", function(data) {
-        hierarchy.nodes(data);
-        console.log(data);
+      var userAnswers = {
+        social: {
+          familie: 9,
+          vrienden: 8
+        },
+        religie: {
+          waarde : 7
+        }
+      }
+
+      function calculateUserDataFromAnswers( answers ) {
+        var data = {answers: Array()};
+        for (var subject in answers) {
+          if (answers.hasOwnProperty(subject)) {
+            var index = data.answers.push({}) - 1;
+            var subjectAnswers = answers[subject];
+            var i = 0;
+            data.answers[index].size = 0;
+            for (var key in subjectAnswers) {
+              if (subjectAnswers.hasOwnProperty(key)) {
+                data.answers[index].name = subject;
+                data.answers[index].size+= subjectAnswers[key];
+                i++;
+              }
+            }
+            data.answers[index].size =  data.answers[index].size / i;
+          }
+        }
+        console.log('user answers:', data);
+        return data;
+      }
+
+      function calculateDutchDataFromAnswers( answers ) {
+        var data = {answers: Array()};
+        var totalAnswers = answers.total;
+        var answers = answers.answers;
+        for (var subject in answers) {
+          if (answers.hasOwnProperty(subject)) {
+            var index = data.answers.push({}) - 1;
+            var subjectAnswers = answers[subject];
+            var i = 0;
+            data.answers[index].size = 0;
+            for (var key in subjectAnswers) {
+              if (subjectAnswers.hasOwnProperty(key)) {
+                data.answers[index].name = subject;
+                data.answers[index].size+= subjectAnswers[key];
+                i++;
+              }
+            }
+            data.answers[index].size =  data.answers[index].size / i;
+            data.answers[index].size =  data.answers[index].size / totalAnswers;
+          }
+        }
+        console.log('dutch answers:', data);
+        return data;
+      }
+
+      d3.json("all_answers.json", function(data) {
+        // var data = calculateDutchDataFromAnswers(data);
+        var data = calculateUserDataFromAnswers(userAnswers);
+
         setDomain(data);
-        bar(data, 0);
+        setBar(data, 0);
+
+        data.answers[2] = {}
+        data.answers[2].name = "sport";
+        data.answers[2].size = 10;
+
+        // console.log(data);
+
+        //console.log(data);
+
+        updateBar(data, 0);
       });
 
       function setDomain(data) {
@@ -70,17 +136,17 @@
         console.log("open subject:", d.name);
       }
 
-      function updateBar() {
-        console.log("update bar");
+      function updateBar(d, i) {
+        setBar(d);
       }
 
       // Creates a set of bars for the given data node, at the specified index.
-      function bar(d, i) {
+      function setBar(d, i) {
         var bar = svg.insert("svg:g", ".y.axis")
             .attr("class", "enter")
-            .attr("transform", "translate(0,5)")
+            .attr("transform", "translate(0,0)")
           .selectAll("g")
-            .data(d.children)
+            .data(d.answers)
           .enter().append("svg:g")
             .on("click", openSubject);
 
@@ -92,7 +158,7 @@
             .text(function(d) { return d.name; });
 
         bar.append("svg:rect")
-            .attr("width", function(d) { return x(d.value); })
+            .attr("width", function(d) { return x(d.size); })
             .attr("height", y);
 
         // Update the x-axis.
@@ -102,12 +168,18 @@
         bar
           .attr("transform", function(d, i) { 
             var translateY = y * i * 1.8;
-            console.log(translateY);
             return "translate(0," + translateY + ")";
           });       
 
         return bar;
       }
+
+
+
+
+
+
     </script>
+
   </body>
 </html>

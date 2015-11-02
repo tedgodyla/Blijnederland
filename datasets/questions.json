@@ -17,12 +17,22 @@
 			"familie": {
 				"label": "Hoe vaak spreek je af met je (beste) vrienden?",
 				"type": "radio",
-				"options": [ "Meerdere keren per week", "1 keer per week", "1 keer per maand", "Een paar keer in het jaar" ]
+				"options": [ 
+					{ "Meerdere keren per week": 10 }, 
+					{ "1 keer per week": 7 },
+					{ "1 keer per maand": 4 }, 
+					{ "Een paar keer in het jaar": 1}
+				]
 			},
 			"vrienden": {
 				"label": "Hoe vaak zie jouw directe familie?",
-					"type": "radio",
-				"options": [ "Meerdere keren per week", "1 keer per week", "1 keer per maand", "Een paar keer in het jaar" ]
+				"type": "radio",
+				"options": [ 
+					{ "Meerdere keren per week": 10 },
+					{ "1 keer per week": 7 }, 
+					{ "1 keer per maand": 4 },
+					{ "Een paar keer in het jaar": 1}
+				]
 			}
 		},
 
@@ -32,10 +42,25 @@
 				"type": "select",
 				"options": ["Geen", "Rooms-katholiek", "Nederlands hervormd", "Gereformeerd", "Protestantse Kerk", "Islam", "Boeddhisme", "Anders"]
 			},
+			"tevreden" : {
+				"label": "Hoe tevreden ben je?",
+				"type": "select",
+				"options": [
+					{ "Ontevreden": 1 }, 
+					{ "Niet zo tevreden": 4 }, 
+					{ "Redelijk tevreden": 7 }, 
+					{ "Zeer tevreden": 10 }
+				]
+			},
 			"waarde" : {
 				"label": "Hoe vaak in het jaar ben je bezig met geloof?",
 				"type": "radio",
-				"options": [ "Elke week of meer", "Eens in de maand", "Soms in het jaar", "Nooit"]
+				"options": [
+					{ "Elke week of meer": 10 }, 
+					{ "Eens in de maand": 7 }, 
+					{ "Soms in het jaar": 4 },
+					{ "Nooit": 1}
+				]
 			}
 		},
 
@@ -43,28 +68,45 @@
 			"baan": {
 				"label": "Heb jij een baan?",
 				"type": "radio",
-				"options": ["Ja", "Nee"]
+				"options": [
+					{ "Ja": 10 },
+					{ "Nee": 1 }
+				]
 			},
 
-			"baan": {
-				"label": "Ben je blij met je inkomen",
+			"tevreden": {
+				"label": "Ben je tevreden met je inkomen",
 				"type": "radio",
-				"options": ["Nee, het is te weinig", "Ja, maar meer kan altijd", "Ja, ik ben er blij mee!"]
+				"options": [
+					{ "Nee, het is te weinig": 1 },
+					{ "Nee, maar het kon slechter": 4 },
+					{ "Ja, maar meer kan altijd": 7 },
+					{ "Ja, ik ben er tevreden mee!": 10 }
+				]
 			}
 
 		},
 
 		"Gezondheid": {
-			"waarde": {
+			"sport": {
 				"label": "Hoevaak sport je?",
 				"type": "radio",
-				"options": ["Dagelijks", "Wekelijks", "Minder dan 1 keer per week"]
+				"options": [
+					{ "Dagelijks": 5 },
+					{ "Wekelijks": 10 }, 
+					{ "Minder dan 1 keer per week": 1 }
+				]
 			},
 
-			"Gezond": {
+			"gezond": {
 				"label": "Voel jij je gezond?",
 				"type": "radio",
-				"options": ["Ja", "Ja, maar", "Nee, maar", "Nee"]
+				"options": [
+					{ "Ja": 10 },
+					{ "Ja, maar kan beter": 7 },
+					{ "Nee, maar kan slechter": 4 }, 
+					{ "Nee": 1 }
+				]
 			}
 		},
 
@@ -72,36 +114,64 @@
 			"stemmen": {
 				"label": "Stem jij voor de verkiezingen?",
 				"type": "radio",
-				"options": ["Ja", "Nee"]
+				"options": [
+					{ "Ja": 10 }, 
+					{ "Nee": 1 }
+				]
 			},
 			"veiligheid": {
 				"label": "Voel jij je wel eens onveilig op straat?",
 				"type": "radio",
-				"options": ["Ja, best vaak", "Ja, maar alleen 's avonds", "Nee"]
+				"options": [
+					{ "Ja, vaak": 1 }, 
+					{ "Ja, maar alleen op bepaalde tijdstippen": 7 },
+					{ "Ja, heel soms": 4 },
+					{ "Nee": 1 }
+				]
 			},
 
 			"veiligheid": {
 				"label": "Voel jij je wel eens onveilig omdat je in Nederland woont?",
 				"type": "radio",
-				"options": ["Ja, best vaak", "Nee"]
+				"options": [
+					{ "Ja, vaak": 1 }, 
+					{ "Ja, maar alleen op bepaalde tijdstippen": 7 },
+					{ "Ja, heel soms": 4 },
+					{ "Nee": 1 }
+				]
 			},
 
 			"vrijwilligerswerk": {
 				"label": "Doe je aan vrijwilligerswerk?",
 				"type": "radio",
-				"options": ["Ja", "Nee"]
+				"options": [
+					{ "Allen maar": 10 },
+					{ "Regelmatig": 7 },
+					{ "Soms": 4 },
+					{ "Nee": 1 }
+				]
 			}
 		},
 		"gelukkigheid": {
 			"geluk" : {
 				"label": "Hoe gelukkig ben je met je leven?",
 				"type": "select",
-				"options": ["Helemaal niet gelukkig", "Niet zo gelukkig", "Redelijk gelukkig", "Zeer gelukkig", "Weet niet"]
+				"options": [
+					{ "Helemaal niet gelukkig": 1 },
+					{ "Niet zo gelukkig": 4 }, 
+					{ "Redelijk gelukkig": 7 }, 
+					{ "Zeer gelukkig": 10}
+				]
 			},
 			"tevreden" : {
 				"label": "Hoe tevreden ben je?",
 				"type": "select",
-				"options": ["Ontevreden", "Niet zo tevreden", "Redelijk tevreden", "Zeer tevreden", "Weet niet"]
+				"options": [
+					{ "Ontevreden": 1 }, 
+					{ "Niet zo tevreden": 4 }, 
+					{ "Redelijk tevreden": 7 }, 
+					{ "Zeer tevreden": 10 }
+				]
 			}
 		}
 	}

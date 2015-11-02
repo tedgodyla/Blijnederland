@@ -124,12 +124,27 @@ function print_question ($questions, $propname, $options = false)
 				<select id="<?= $propname; ?>" name="<?= $propname; ?>" class="select">
 					<?php
 					$first_option = true;
-					foreach ($question->options as $option) {
-						$selected = ($first_option) ? " selected": "";
-						?>
-						<option value="<?= $option; ?>"<?= $selected; ?>><?= $option; ?></option>
-						<?php
-						$first_option = false;
+					for ($i = 0; $i < count($question->options); $i++) {
+						$options = $question->options[$i];
+						if (is_string($options))
+						{
+							$selected = ($first_option) ? " selected": "";
+							?>
+							<option value="<?= $options; ?>"<?= $selected; ?>><?= $options; ?></option>
+							<?php
+							$first_option = false;
+						}
+
+						else
+						{
+							foreach ($options as $optionkey => $optionval) {
+								$selected = ($first_option) ? " selected": "";
+								?>
+								<option value="<?= $optionval; ?>"<?= $selected; ?>><?= $optionkey; ?></option>
+								<?php
+								$first_option = false;
+							}
+						}
 					}
 					?>
 				</select>
@@ -142,18 +157,21 @@ function print_question ($questions, $propname, $options = false)
 				<span><?= $question->label; ?></span><br>
 				<?php
 				$first_option = true;
-				foreach ($question->options as $option) {
-					$checked = ($first_option) ? " checked": "";
-					?>
-					<div class="radiobutton">
-						<input id="<?= $propname . $option; ?>" value="<?= $option; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
-						<label class="labeltext" for="<?= $propname . $option; ?>">
-						<div class="bg"></div>
-						<div class="labelanswer"><?= $option; ?></div>
-						</label>
-					</div>
-					<?php
-					$first_option = false;
+
+				for ($i = 0; $i < count($question->options); $i++) {
+					foreach ($question->options[$i] as $optionkey => $optionval) {
+						$checked = ($first_option) ? " checked": "";
+						?>
+						<div class="radiobutton">
+							<input id="<?= $propname . $optionval; ?>" value="<?= $optionval; ?>" type="radio" name="<?= $propname; ?>" <?= $checked; ?>>
+							<label class="labeltext" for="<?= $propname . $optionval; ?>">
+								<div class="bg"></div>
+								<div class="labelanswer"><?= $optionkey; ?></div>
+							</label>
+						</div>
+						<?php
+						$first_option = false;
+					}
 				}
 				?>
 				<div class="clear"></div>

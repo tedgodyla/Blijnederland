@@ -423,6 +423,7 @@ header.logoleft svg.logo {
 }
 
 .fill-card .card-profile {
+	position: relative;
 	background: #e8c3af;
     padding: 1em;
     height: 8em;

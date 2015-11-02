@@ -1,0 +1,12 @@
+{
+  "total": 100,
+  "answers": {
+    "social": {
+      "familie": 850,
+      "vrienden": 739
+    },
+    "religie": {
+      "waarde" : 329
+    }
+  }
+}
