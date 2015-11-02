@@ -20,8 +20,9 @@
 			<?php include_once("includes/svg/keuze.php"); ?>
 		</div>
 		<div class="right">
-			<h1>Voorspel jouw geluk</h1>
-			<p>Phasellus a urna fringilla, ultricies ante sed, mollis elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			<h1>Is geluk heel gewoon?</h1>
+			<p> Nederland behoort tot een van de gelukkigste landen ter wereld. Toch betekent dat niet dat iedere Nederlander dolgelukkig is.
+			Op deze website vergelijk jij jouw geluk met dat van de gemiddelde Nederlander. </p>
 			<article class="q-group card">
 				<h2 class="q-group-title">Stel jezelf voor</h2>
 				<p>Voer je geslacht, naam en leeftijd in.</p>
