@@ -14,6 +14,7 @@
 	<link href="lib/css/jquery-ui.structure.css" rel="stylesheet">
 	<link href="lib/css/icons.css" rel="stylesheet">
 	<link href="lib/css/style.css" rel="stylesheet">
+	<link href="lib/css/styleCharacters.css" rel="stylesheet" >
 	<!--[if lt IE 9]>
 		<script src="lib/js/html5shim.js"></script>
 	<![endif]-->
