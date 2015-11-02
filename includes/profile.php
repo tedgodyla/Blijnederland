@@ -14,6 +14,7 @@
 	$questions = $question_json->profile;
 ?>
 
+<section class="flits"></section>
 <section class="profile container pushtop">
 	<section class="profile-wrap">
 		<div class="left">
