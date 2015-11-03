@@ -1,0 +1,7 @@
+{
+	"religies": [
+		{"naam": "islam", "aantal": 2, "totaal_geluk": 12},
+		{"naam": "rooms-katoliek", "aantal": 10, "totaal_geluk": 96},
+		{"naam": "gerifomeerd", "aantal": 2, "totaal_geluk": 15},
+	]
+}
