@@ -467,15 +467,16 @@ header.logoleft svg.logo {
 .questions .q-group.active .q-group-questions { display: block; }
 
 /* ------------------------------*/
-/* ---------- PROFILE CARD ---------- */
+/* ---------- CARDS ---------- */
 /* ------------------------------*/
 
-.fill-card .card {
+.fillcard .cards,
+.overview .cards {
 	position: relative;
 	width: 20em;
 }
 
-.card-profile {
+.cards .card {
 	position: relative;
 	z-index: 1;
 	background: #e8c3af;
@@ -484,7 +485,7 @@ header.logoleft svg.logo {
     border-radius: 1em;
 }
 
-.card-profile .photo {
+.cards .card .photo {
 	width: 6.5em;
     height: 7.5em;
     background: #f3ddd1;
@@ -493,24 +494,24 @@ header.logoleft svg.logo {
     border-radius: 0.5em;
 }
 
-.card-profile .photo .profilesvg {
+.cards .card .photo .profilesvg {
 	display: block;
 	width: 100%;
 }
 
-.card-profile .info {
+.cards .card .info {
 	position: absolute;
 	bottom: 1em; left: 9em;
 	color: #d24633;
 }
 
-.card-profile .info .icon {
+.cards .card .info .icon {
 	font-size: 1.5em;
     position: relative;
     left: -0.1em;
 }
 
-.card-stats {
+.cards .card-stats {
 	background: #efd5c7;
     position: relative;
     z-index: 0;
@@ -525,6 +526,9 @@ header.logoleft svg.logo {
 	border-bottom-left-radius: 1em;
 }
 
+.cards .card-nl {
+	margin-top: 1em;
+}
 
 /* ------------------------------*/
 /* ---------- SUBJECT ---------- */

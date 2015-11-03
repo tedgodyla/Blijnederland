@@ -10,7 +10,7 @@
 	$steps_width = 100 / $total_questions;
 ?>
 
-<section class="fill-card container">
+<section class="fillcard container">
 	<section class="questions">
 		<?php
 		$questions = $question_json->questions;
@@ -37,8 +37,8 @@
 		?>	
 	</section>
 
-	<section class="card pushtop">
-		<section class="card-profile">
+	<section class="cards pushtop">
+		<section class="card card-user">
 			<section class="photo">
 				<div id="profilesvg"></div>
 			</section>
