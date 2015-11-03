@@ -19,7 +19,7 @@
 	<section class="profile-wrap">
 		<div class="left">
 		<?php 
-		include_once("includes/svg/svg.html"); 
+		include_once("includes/svg/keuze.php"); 
 		?>
 		</div>
 		<div class="right">
