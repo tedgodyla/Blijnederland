@@ -35,7 +35,7 @@ function print_submit($str, $align = true)
 		echo '<div class="text-center">';
 	}
 
-	echo '<input type="submit" value="' . $str . '">';
+	echo '<input class="submit" type="submit" value="' . $str . '">';
 	
 	if ($align)
 	{

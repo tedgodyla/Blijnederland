@@ -62,7 +62,8 @@ span.label {
 	margin-bottom: 0.75em;
 }
 
-input[type="submit"] {
+input[type="submit"],
+.profile input[type="submit"].ready {
 	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	background: #f39a3c;
@@ -73,6 +74,10 @@ input[type="submit"] {
     padding: 0.4em 2em;
     display: inline-block;
     cursor: pointer;
+}
+
+.profile input[type="submit"] {
+	background: #ccc;
 }
 
 input {
