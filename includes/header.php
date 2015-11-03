@@ -65,10 +65,8 @@
 	$question_json = json_decode($question_json);
 
 	include_once('includes/intro.php');
-
 	include_once('includes/profile.php');
-
-	include_once('includes/fill-card.php');
-
+	include_once('includes/fillcard.php');
+	include_once('includes/overview.php');
 	include_once('includes/subjectdata.php');
 ?>
