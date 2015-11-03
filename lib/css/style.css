@@ -56,8 +56,10 @@ a {
 /* ---------- INPUT ---------- */
 /* ------------------------------*/
 
-label {
+label,
+span.label {
 	display: block;
+	margin-bottom: 0.75em;
 }
 
 input[type="submit"] {
@@ -156,7 +158,8 @@ input:not([type="submit"]):focus {
 	height: auto;
 	border-radius: 1em;
 	padding: .5em 1em;
-	margin-top: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
 }
 .radiobutton input:checked + label .labelanswer {
 	color: #4abea4;
@@ -617,7 +620,7 @@ header.logoleft svg.logo {
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    margin-top: 1em;
+    margin-top: 0.5em;
     background: #fff;
     color: #333;
     border-radius: 0.5em;
