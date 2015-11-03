@@ -74,10 +74,22 @@ input[type="submit"],
     padding: 0.4em 2em;
     display: inline-block;
     cursor: pointer;
+    transition: 2s;
+    opacity: 1;
+	transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+	transition: all 0.2s;
+
 }
 
 .profile input[type="submit"] {
+
 	background: #ccc;
+	color: #adadad;
+	opacity: 1;
+	transition: all 0.2s;
 }
 
 input {
@@ -130,7 +142,6 @@ input:not([type="submit"]):focus {
     border-radius: 50%;
 	background: #fff;
 	opacity: 0;
-
 	transform: scale(0.5);
     -ms-transform: scale(0.5);
     -moz-transform: scale(0.5);
@@ -304,6 +315,11 @@ header.logoleft svg.logo {
 
 .profile .profile-wrap > .left {
 	float: left;
+	margin-left: -8em;
+}
+
+.left {
+	width: 50%;
 }
 
 .profile .profile-wrap > .left #keuze {
