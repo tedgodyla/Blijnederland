@@ -1,4 +1,4 @@
-<svg version="1.1"
+<svg version="1.1" id="phases"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="240.7px" height="747.5px" viewBox="0 0 240.7 747.5"
 	 style="overflow:visible;enable-background:new 0 0 240.7 747.5;" xml:space="preserve">
