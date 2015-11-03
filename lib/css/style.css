@@ -435,8 +435,7 @@ header.logoleft svg.logo {
 	position: relative;
 	float: right;
 	margin-top: -20px;
-
-		width: 0; 
+	width: 0; 
 	height: 0; 
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
@@ -447,8 +446,7 @@ header.logoleft svg.logo {
 }
 
 
-.questions .q-group.active  .arrow{
-	
+.questions .q-group.active  .arrow {
 	transform: rotate(180deg);
 	transition: 0.7s;
 
