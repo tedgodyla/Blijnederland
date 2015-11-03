@@ -154,7 +154,7 @@ function print_question ($questions, $propname, $options = false)
 			if ($type == "radio")
 			{
 				?>
-				<span><?= $question->label; ?></span><br>
+				<span class="label"><?= $question->label; ?></span>
 				<?php
 				$first_option = true;
 
