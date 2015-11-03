@@ -89,8 +89,6 @@ input[type="submit"],
 	background: #ccc;
 	color: #adadad;
 	opacity: 1;
-
-
 	transition: all 0.2s;
 }
 
@@ -308,6 +306,11 @@ header.logoleft svg.logo {
 
 .profile .profile-wrap > .left {
 	float: left;
+	margin-left: -8em;
+}
+
+.left {
+	width: 50%;
 }
 
 .profile .profile-wrap > .left #keuze {
