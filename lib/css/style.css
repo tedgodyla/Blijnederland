@@ -166,6 +166,7 @@ input:not([type="submit"]):focus {
 	margin-top: 0.5em;
 	margin-bottom: 0;
 }
+
 .radiobutton input:checked + label .labelanswer {
 	color: #4abea4;
 	position: relative;
@@ -473,6 +474,7 @@ header.logoleft svg.logo {
 .overview .cards {
 	position: relative;
 	width: 20em;
+	float: left;
 }
 
 .cards .card {
@@ -504,7 +506,7 @@ header.logoleft svg.logo {
 	color: #d24633;
 }
 
-.cards .card .info .icon {
+.cards .card-user .info .icon {
 	font-size: 1.5em;
     position: relative;
     left: -0.1em;
@@ -525,8 +527,52 @@ header.logoleft svg.logo {
 	border-bottom-left-radius: 1em;
 }
 
+/* ------------------------------*/
+/* ---------- NL CARD ---------- */
+/* ------------------------------*/
+
 .cards .card-nl {
 	margin-top: 1em;
+	height: 9.5em;
+}
+
+.cards .card-nl .info {
+	bottom: 2.5em;
+}
+
+.card-nl .radiobutton label {
+	background: #ecd4c7;
+	margin-bottom: 0.5em;
+}
+
+.card-nl .radiobutton label .icon {
+	color: #64bbc9;
+}
+
+.card-nl .radiobutton input:checked + label .icon {
+	color: #2da3b6;
+}
+
+.cards .card-nl .info {
+	color: #2da3b6;
+}
+
+.card-nl .ui-slider {
+	background: #ecd4c7;
+}
+
+.card-nl .ui-slider .ui-slider-handle {
+	background: #2da3b6;
+}
+
+/* ------------------------------*/
+/* ---------- NL CHART ---------- */
+/* ------------------------------*/
+
+.overview .chart {
+	position: relative;
+	float: left;
+	margin-left: 1em;
 }
 
 /* ------------------------------*/
