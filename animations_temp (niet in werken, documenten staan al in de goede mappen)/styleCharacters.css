@@ -55,16 +55,7 @@ body {
 	.st50{clip-path:url(#SVGID_34_);fill:#D95C50;}
 	.st51{clip-path:url(#SVGID_34_);fill:#FFFFFF;}
 
-/*MANNEN*/
-#phase_1,
-/*#phase_2,*/
-#phase_3,
-#phase_4,
-#phase_5 {
-	display: none;
-}
 
-/*VROUWEN*/
 
 #light_1 {
 	opacity: 0;
