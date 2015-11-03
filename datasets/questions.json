@@ -109,14 +109,14 @@
 					{ "Nee": 1 }
 				]
 			},
-			"veiligheid_straat": {
-				"label": "Voel jij je wel eens onveilig op straat?",
+			"vrijwilligerswerk": {
+				"label": "Doe je aan vrijwilligerswerk?",
 				"type": "radio",
 				"options": [
-					{ "Ja, vaak": 1 }, 
-					{ "Ja, maar alleen op bepaalde tijdstippen": 7 },
-					{ "Ja, heel soms": 4 },
-					{ "Nee": 10 }
+					{ "Allen maar": 10 },
+					{ "Regelmatig": 7 },
+					{ "Soms": 4 },
+					{ "Nee": 1 }
 				]
 			}
 		},
@@ -132,15 +132,14 @@
 					{ "Nee": 10 }
 				]
 			},
-
-			"vrijwilligerswerk": {
-				"label": "Doe je aan vrijwilligerswerk?",
+			"veiligheid_straat": {
+				"label": "Voel jij je wel eens onveilig op straat?",
 				"type": "radio",
 				"options": [
-					{ "Allen maar": 10 },
-					{ "Regelmatig": 7 },
-					{ "Soms": 4 },
-					{ "Nee": 1 }
+					{ "Ja, vaak": 1 }, 
+					{ "Ja, maar alleen op bepaalde tijdstippen": 7 },
+					{ "Ja, heel soms": 4 },
+					{ "Nee": 10 }
 				]
 			}
 		},

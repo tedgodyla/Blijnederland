@@ -1,1 +1,39 @@
-{"answers":{}}
+{
+    "answers": {
+        "8AF03E5E-8A33-4770-987B-1ED73944BE57": {
+          	"profile": {
+                "naam": "",
+                "leeftijd": 25,
+                "geslacht": "Man"
+            },
+            "Social": {
+                "familie": "10",
+                "vrienden": "10"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "10"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "1"
+            },
+            "Gezondheid": {
+                "sport": "5",
+                "gezond": "10"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "10"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "1",
+                "veiligheid_straat": "1"
+            },
+            "Gelukkigheid": {
+                "geluk": "1",
+                "tevreden": "1"
+            }
+        }
+    }
+}
