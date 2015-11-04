@@ -581,7 +581,8 @@ header.logoleft svg.logo {
 
 .cards .card-user .info .icon {
 	font-size: 1.5em;
-    position: relative;
+    position: absolute;
+    z-index: 1;
     left: -0.1em;
 }
 
