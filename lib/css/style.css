@@ -553,11 +553,21 @@ header.logoleft svg.logo {
 }
 
 .cards .card .photo #profilesvg1 svg {
-	margin-left: -0.5em;
-    margin-top: -2.5em;
     width: 120px;
     height: 373px;
+    margin-top: -2.5em;
 }
+
+.cards .card .photo .phase_1_m { margin-left: -0.5em; }
+.cards .card .photo .phase_2_m { margin-left: -0.5em; }
+.cards .card .photo .phase_3_m { margin-left: -0.5em; }
+.cards .card .photo .phase_4_m { margin-left: -0.5em; }
+.cards .card .photo .phase_5_m { margin-left: -0.5em; }
+.cards .card .photo .phase_1_f { margin-left: -0.5em; }
+.cards .card .photo .phase_2_f { margin-left: -0.5em; }
+.cards .card .photo .phase_3_f { margin-left: -0.5em; }
+.cards .card .photo .phase_4_f { margin-left: -0.5em; }
+.cards .card .photo .phase_5_f { margin-left: -0.5em; }
 
 .cards .card .info {
 	position: absolute;
