@@ -23,7 +23,7 @@
 			</div>
 		</div>
 		<div class="profile-intro">
-			<h1>Is geluk heel gewoon?</h1>
+			<h1>Hoe gelukkig ben jij?</h1>
 			<p> Nederland behoort tot een van de gelukkigste landen ter wereld. 
 			Maar voelt iedere Nederlander zich ook zo?
 			<!-- Toch betekent dat niet dat iedere Nederlander dolgelukkig is. -->
@@ -48,6 +48,7 @@
 					</form>
 				</section>
 			</article>
+			<p class="disclaimer">Disclaimer: alle gegevens die ingevoerd worden zullen opgeslagen worden. Uw naam zal niet gedeeld worden met derden of publiek gesteld worden.</p>
 		</div>
 		<div class="clear"></div>
 	</section>

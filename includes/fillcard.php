@@ -44,7 +44,7 @@
 							<input id="geslachtNlUni" value="uni" data-icon="female" type="button" name="edit">
 							<label for="geslachtNlUni">
 								<div class="bg"></div>
-								<div class="icon icon-female"></div>
+								<div class="icon icon-pencil"></div>
 							</label>
 			</div>
 
@@ -53,7 +53,7 @@
 							<input id="share" value="uni" data-icon="female" type="button" name="share">
 							<label for="geslachtNlUni">
 								<div class="bg"></div>
-								<div class="icon icon-female"></div>
+								<div class="icon icon-social-facebook"></div>
 							</label>
 			</div>
 			<section class="photo">
