@@ -3,7 +3,7 @@
 		<section class="card card-nl">
 			<section class="photo">
 				<div id="nlsvg1">
-					<?php include("includes/svg/keuze.php"); ?>
+
 				</div>
 			</section>
 			<section class="info">
@@ -44,4 +44,11 @@
 	<section class="chart">
 		<div id="overviewsvg1"></div>
 	</section>
+	<section class="subject">
+		<h1>Subject</h1>
+		<div id="subsvg1"></div>
+		<div id="subsvg1"></div>
+		<div id="subsvg1"></div>
+	</section>
+	<div class="clear"></div>
 </section>

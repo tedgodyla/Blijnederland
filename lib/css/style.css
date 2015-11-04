@@ -302,6 +302,7 @@ header.logoleft svg.logo {
 	width: 1080px;
 	padding: 0 1em;
 	margin: auto;
+	overflow-x: hidden;
 }
 
 /* ------------------------------*/
@@ -554,16 +555,17 @@ header.logoleft svg.logo {
     border-radius: 0.5em;
 }
 
-.cards .card .photo #profilesvg1 svg {
+.cards .card .photo #profilesvg1 svg,
+.cards .card .photo #nlsvg1 svg {
     width: 120px;
     height: 373px;
     margin-top: -2.5em;
 }
 
-
 .left #phases {
 	margin-left: 7em;
 }
+
 .cards .card .photo .phase_1_m { margin-left: -0.5em; margin-top: -5em; }
 .cards .card .photo .phase_2_m { margin-left: -0.5em; }
 .cards .card .photo .phase_3_m { margin-left: -0.5em; margin-top: 2em;}
@@ -574,6 +576,12 @@ header.logoleft svg.logo {
 .cards .card .photo .phase_3_f { margin-left: -0.5em; }
 .cards .card .photo .phase_4_f { margin-left: -0.5em; }
 .cards .card .photo .phase_5_f { margin-left: -0.5em; margin-top: -2em; }
+
+.cards .card .photo .phase_1_uni { margin-left: -0.5em; margin-top: -6em; }
+.cards .card .photo .phase_2_uni { margin-left:  0em; margin-top: -2em;}
+.cards .card .photo .phase_3_uni { margin-left: -0.5em; }
+.cards .card .photo .phase_4_uni { margin-left: -0.5em; }
+.cards .card .photo .phase_5_uni { margin-left: -0.5em; margin-top: -2em; }
 
 .cards .card .info {
 	position: absolute;
@@ -661,15 +669,15 @@ header.logoleft svg.logo {
 /* ---------- SUBJECT ---------- */
 /* ------------------------------*/
 
-.subject-container {
-	position: absolute;
-	padding: 2em;
-	top: 1em;
-	bottom: 1em;
-	right: 1em;
-	left: 50%;
-	background: #fff;
-	box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+.subject {
+    position: relative;
+    width: 0px;
+    overflow: hidden;
+    float: right;
+    background: #b9e7d4;
+    padding: 1em 0;
+    border-radius: 1em;
+    top: 1em;
 }
 
 /* ------------------------------*/
