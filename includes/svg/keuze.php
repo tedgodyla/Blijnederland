@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<svg version="1.1" id="phases"
-=======
+<svg version="1.1" id="phases">
 <style type="text/css" media="screen">
 	/* Kleuren van alle characters */
 	.st0{fill:#E5A376;}
