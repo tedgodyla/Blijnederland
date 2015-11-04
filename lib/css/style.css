@@ -196,6 +196,14 @@ input:not([type="submit"]):focus {
 
 svg {
 	font-size: 1em;
+	margin-top: 0em;
+	/*width: 70%;*/
+}
+
+svg#phases {
+	width: 45%;
+	margin-top: -11em;
+	margin-left: 7em;
 }
 
 .axis {

@@ -1,7 +1,8 @@
+
 {
     "answers": {
         "1": {
-          	"profile": {
+            "profile": {
                 "naam": "",
                 "leeftijd": 15,
                 "geslacht": "Vrouw"
@@ -280,8 +281,7 @@
                 "tevreden": "7"
             }
         },
-
-          "9": {
+        "9": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -316,8 +316,7 @@
                 "tevreden": "10"
             }
         },
-
-          "10": {
+        "10": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -352,8 +351,7 @@
                 "tevreden": "7"
             }
         },
-
-          "11": {
+        "11": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -388,8 +386,7 @@
                 "tevreden": "7"
             }
         },
-
-          "12": {
+        "12": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -424,8 +421,7 @@
                 "tevreden": "7"
             }
         },
-
-          "13": {
+        "13": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -460,8 +456,7 @@
                 "tevreden": "7"
             }
         },
-
-          "14": {
+        "14": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -496,8 +491,7 @@
                 "tevreden": "7"
             }
         },
-
-          "15": {
+        "15": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -532,8 +526,7 @@
                 "tevreden": "7"
             }
         },
-
-          "16": {
+        "16": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -568,8 +561,7 @@
                 "tevreden": "10"
             }
         },
-
-          "17": {
+        "17": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -604,8 +596,7 @@
                 "tevreden": "7"
             }
         },
-
-          "18": {
+        "18": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -640,8 +631,7 @@
                 "tevreden": "4"
             }
         },
-
-          "19": {
+        "19": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -676,8 +666,7 @@
                 "tevreden": "7"
             }
         },
-
-          "20": {
+        "20": {
             "profile": {
                 "naam": "",
                 "leeftijd": 19,
@@ -711,6 +700,402 @@
                 "geluk": "4",
                 "tevreden": "4"
             }
-        }
-    }
-}
+        },
+
+        "21": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 19,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "4",
+                "vrienden": "3"
+            },
+            "Religie": {
+                "welke": "Katholiek",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "1",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "3",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "22": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 19,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "7",
+                "vrienden": "9"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "5"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "9",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "22": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 19,
+                "geslacht": "Man"
+            },
+            "Social": {
+                "familie": "6",
+                "vrienden": "9"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "10",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "1",
+                "vrijwilligerswerk": "10"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "23": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 19,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "8",
+                "vrienden": "6"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "1",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "4",
+                "tevreden": "4"
+            }
+        },
+
+         "24": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Man"
+            },
+            "Social": {
+                "familie": "7",
+                "vrienden": "8"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "3"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "25": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "7",
+                "vrienden": "10"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "1",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "26": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "3",
+                "vrienden": "8"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "10",
+                "tevreden": "7"
+            }
+        },
+
+         "27": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "5",
+                "vrienden": "5"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "1",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "10"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "3",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "28": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "8",
+                "vrienden": "8"
+            },
+            "Religie": {
+                "welke": "Katholiek",
+                "waarde": "3"
+            },
+            "Werk": {
+                "baan": "1",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "10",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "10",
+                "tevreden": "7"
+            }
+        },
+
+         "29": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Man"
+            },
+            "Social": {
+                "familie": "4",
+                "vrienden": "8"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "1"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "10",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "10",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "6",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+
+         "30": {
+            "profile": {
+                "naam": "",
+                "leeftijd": 20,
+                "geslacht": "Vrouw"
+            },
+            "Social": {
+                "familie": "8",
+                "vrienden": "7"
+            },
+            "Religie": {
+                "welke": "Geen",
+                "waarde": "2"
+            },
+            "Werk": {
+                "baan": "10",
+                "tevreden": "7"
+            },
+            "Gezondheid": {
+                "sport": "10",
+                "gezond": "7"
+            },
+            "Participatie": {
+                "stemmen": "1",
+                "vrijwilligerswerk": "1"
+            },
+            "Veiligheid": {
+                "veiligheid_nl": "8",
+                "veiligheid_straat": "7"
+            },
+            "Gelukkigheid": {
+                "geluk": "7",
+                "tevreden": "7"
+            }
+        },
+        
+   }
