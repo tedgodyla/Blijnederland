@@ -82,8 +82,8 @@
 				"label": "Hoevaak sport je?",
 				"type": "radio",
 				"options": [
-					{ "Dagelijks": 5 },
-					{ "Wekelijks": 10 }, 
+					{ "Dagelijks": 10 },
+					{ "Wekelijks": 5 }, 
 					{ "Minder dan 1 keer per week": 1 }
 				]
 			},

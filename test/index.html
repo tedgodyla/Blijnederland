@@ -27,232 +27,86 @@
   </head>
   <body>
     <div id="statssvg1"></div>
+    <script type="text/javascript" src="../lib/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="d3/d3.js"></script>
     <script type="text/javascript" src="d3/d3.layout.js"></script>
     <script type="text/javascript">
 
-    var test = {
-      man: [
-        {
-          age: "0-15",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "15-25",
-          total: 5,
-          subjects: [
-            { name: "social", value: 37 },
-            { name: "religie", value: 19 }
-          ]
-        },
-        {
-          age: "25-35",
-          total: 3,
-          subjects: [
-            { name: "social", value: 22 },
-            { name: "religie", value: 12 }
-          ]
-        },
-        {
-          age: "35-45",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "45-55",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "55-65",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "65-75",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "75-100",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        }
-      ],
-      vrouw: [
-        {
-          age: "0-15",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "15-25",
-          total: 5,
-          subjects: [
-            { name: "social", value: 37 },
-            { name: "religie", value: 19 }
-          ]
-        },
-        {
-          age: "25-35",
-          total: 3,
-          subjects: [
-            { name: "social", value: 22 },
-            { name: "religie", value: 12 }
-          ]
-        },
-        {
-          age: "35-45",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "45-55",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "55-65",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "65-75",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        },
-        {
-          age: "75-100",
-          total: 1,
-          subjects: [
-            { name: "social", value: 8 },
-            { name: "religie", value: 5 }
-          ]
-        }
-      ]
+
+    function get_answers () {
+
     };
 
-    var geslacht = "man";
-    var leeftijd = "15-25";
+    get_answers();
 
-    var dataset = {
-      user: Array(),
-      nl: Array
+    function make_chart(data) {
+  
+      
+        // var m = [0, 0, 0, 100], // top right bottom left
+        //     w = 220, // width
+        //     h = 320, // height
+        //     x = d3.scale.linear().range([0, w]),
+        //     y = 20;
+
+        // var svg = d3.select("#statssvg1").append("svg:svg")
+        //     .attr("width", w + m[1] + m[3])
+        //     .attr("height", h + m[0] + m[2])
+        //   .append("svg:g")
+        //     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+        // svg.append("svg:g")
+        //     .attr("class", "x axis");
+
+
+        // x.domain([0, 10]).nice();
+
+        // setBar(dataset, 0);
+
+
+        // // Creates a set of bars for the given data node, at the specified index.
+        // function setBar(d, i) {
+        //   var barUser = svg.insert("svg:g", ".y.axis")
+        //       .attr("class", "user")
+        //       .attr("transform", "translate(0,0)")
+        //     .selectAll("g")
+        //       .data(d.user)
+        //     .enter().append("svg:g")
+
+        //   barUser.append("svg:text")
+        //       .attr("x", -m[3])
+        //       .attr("y", y)
+        //       .attr("dy", ".35em")
+        //       .attr("text-anchor", "start")
+        //       .text(function(d) { return d.name; });
+
+        //   barUser.append("svg:rect")
+        //       .attr("width", function(d) { return x(d.size); })
+        //       .attr("height", y);
+
+        //   barUser
+        //     .attr("transform", function(d, i) { 
+        //       var translateY = y * i * 2.6;
+        //       return "translate(0," + translateY + ")";
+        //     });  
+
+        //   var barNetherland = svg.insert("svg:g", ".y.axis")
+        //       .attr("class", "netherland")
+        //       .attr("transform", "translate(0,0)")
+        //     .selectAll("g")
+        //       .data(d.nl)
+        //     .enter().append("svg:g")
+
+        //   barNetherland.append("svg:rect")
+        //       .attr("width", function(d) { return x(d.size); })
+        //       .attr("height", y);
+
+        //   barNetherland
+        //     .attr("transform", function(d, i) { 
+        //       var translateY = y + (y * i * 2.6);
+        //       return "translate(0," + translateY + ")";
+        //     });       
+        // }
     }
-
-    dataset.nl = test[geslacht];
-
-    for (var i = 0; i < dataset.nl.length; i++) {
-      if (leeftijd == dataset.nl[i].age) {
-        var total = dataset.nl[i].total;
-        dataset.nl = dataset.nl[i].subjects;
-        break;
-      }
-    }
-
-    for (var i = 0; i < dataset.nl.length; i++) {
-      dataset.nl[i].value = dataset.nl[i].value / total;
-    }
-
-    dataset.user[0] = {};
-    dataset.user[0].name = "social";
-    dataset.user[0].size = 7;
-
-    dataset.user[1] = {};
-    dataset.user[1].name = "religie";
-    dataset.user[1].size = 4;
-
-    //console.log("dataset", dataset);
-    
-
-
-
-      var m = [0, 0, 0, 100], // top right bottom left
-          w = 220, // width
-          h = 320, // height
-          x = d3.scale.linear().range([0, w]),
-          y = 20;
-
-      var svg = d3.select("#statssvg1").append("svg:svg")
-          .attr("width", w + m[1] + m[3])
-          .attr("height", h + m[0] + m[2])
-        .append("svg:g")
-          .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
-
-      svg.append("svg:g")
-          .attr("class", "x axis");
-
-
-      x.domain([0, 10]).nice();
-
-      setBar(dataset, 0);
-
-
-      // Creates a set of bars for the given data node, at the specified index.
-      function setBar(d, i) {
-        console.log(d);
-
-        var bar = svg.insert("svg:g", ".y.axis")
-            .attr("class", "enter")
-            .attr("transform", "translate(0,0)")
-          .selectAll("g")
-            .data(d.user)
-          .enter().append("svg:g")
-
-        bar.append("svg:text")
-            .attr("x", -m[3])
-            .attr("y", y / 2)
-            .attr("dy", ".35em")
-            .attr("text-anchor", "start")
-            .text(function(d) { return d.name; });
-
-        bar.append("svg:rect")
-            .attr("width", function(d) { return x(d.size); })
-            .attr("height", y);
-
-        bar
-          .attr("transform", function(d, i) { 
-            var translateY = y * i * 1.8;
-            return "translate(0," + translateY + ")";
-          });       
-
-        return bar;
-      }
-
 
     </script>
 
