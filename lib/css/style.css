@@ -451,6 +451,7 @@ header.logoleft svg.logo {
     padding: 1em 0;
     border-radius: 1em;
     top: 1em;
+ 
 }
 
 .questions .q-group {
@@ -529,6 +530,7 @@ header.logoleft svg.logo {
 .questions .q-group .q-group-questions .q span.label {
 	color: #fff;
 }
+
 
 /* ------------------------------*/
 /* ---------- CARDS ---------- */
