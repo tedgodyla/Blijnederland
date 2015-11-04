@@ -23,6 +23,13 @@
 								<div class="icon icon-female"></div>
 							</label>
 						</div>
+						<div class="radiobutton">
+							<input id="geslachtNlUni" value="uni" data-icon="female" type="radio" name="geslacht">
+							<label for="geslachtNlUni">
+								<div class="bg"></div>
+								<div class="icon icon-female"></div>
+							</label>
+						</div>
 					</form>
 				</section>	
 				<h3>Nederland</h3>
