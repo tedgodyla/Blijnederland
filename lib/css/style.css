@@ -346,17 +346,17 @@ header.logoleft svg.logo {
     height: 370px;
 }
 
-.profile .profile-wrap > .right {
+.profile .profile-wrap > .profile-intro {
 	width: 25em;
 	float: right;
 }
 
-.profile .profile-wrap > .right h1 {
+.profile .profile-wrap > .profile-intro h1 {
 	font-size: 1.8em;
 	margin-bottom: 0.5em;
 }
 
-.profile .profile-wrap > .right p {
+.profile .profile-wrap > .profile-intro p {
 	margin-bottom: 1em;
 }
 

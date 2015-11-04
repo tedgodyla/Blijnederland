@@ -22,7 +22,7 @@
 				<?php include("includes/svg/keuze.php"); ?>
 			</div>
 		</div>
-		<div class="right">
+		<div class="profile-intro">
 			<h1>Is geluk heel gewoon?</h1>
 			<p> Nederland behoort tot een van de gelukkigste landen ter wereld. 
 			Maar voelt iedere Nederlander zich ook zo?
