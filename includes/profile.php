@@ -18,9 +18,9 @@
 <section class="profile container pushtop">
 	<section class="profile-wrap">
 		<div class="left">
-		<?php 
-		include_once("includes/svg/keuze.php"); 
-		?>
+			<div id="keuzesvg1">
+				<?php include("includes/svg/keuze.php"); ?>
+			</div>
 		</div>
 		<div class="right">
 			<h1>Is geluk heel gewoon?</h1>

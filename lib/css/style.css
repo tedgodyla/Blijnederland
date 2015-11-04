@@ -430,6 +430,7 @@ header.logoleft svg.logo {
 .questions .q-group {
 	display: block;
 	padding: 1em;
+	transition: 0.4s ease-in-out;
 }
 
 .questions .q-group.active {
@@ -443,6 +444,7 @@ header.logoleft svg.logo {
 	font-weight: bold;
 	color: #4abea4;
 	text-transform: capitalize;
+	transition: 0.4s ease-in-out;
 }
 
 .questions .q-group.done h2 {
@@ -462,24 +464,25 @@ header.logoleft svg.logo {
 	margin-top: -20px;
 	width: 0; 
 	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	
-	border-top: 10px solid #31806e;
-	transition: 0.6s;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #31806e;
 
+	transition: 0.4s ease-in-out;
 }
 
-
-.questions .q-group.active  .arrow {
-	transform: rotate(180deg);
-	transition: 0.7s;
-
+.questions .q-group.active .arrow {
+	transform: rotate(-180deg);
+	margin-top: -35px;
 }
-
 
 .questions .q-group .q-group-questions { 
-	display: none;
+	height: 0px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.questions .q-group.active .q-group-questions {
 	margin-top: 1.2em;
 }
 
@@ -487,9 +490,19 @@ header.logoleft svg.logo {
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     border-bottom: #5ec6af solid 1px;
+    opacity: 0;
+
+    transition: 0.4s ease-in-out;
 }
 
-.questions .q-group.active .q-group-questions { display: block; }
+.questions .q-group.active .q-group-questions .q {
+	opacity: 1;
+}
+
+.questions .q-group .q-group-questions .q label,
+.questions .q-group .q-group-questions .q span.label {
+	color: #fff;
+}
 
 /* ------------------------------*/
 /* ---------- CARDS ---------- */
@@ -520,9 +533,11 @@ header.logoleft svg.logo {
     border-radius: 0.5em;
 }
 
-.cards .card .photo .profilesvg {
-	display: block;
-	width: 100%;
+.cards .card .photo #profilesvg1 svg {
+	margin-left: -0.5em;
+    margin-top: -2.5em;
+    width: 120px;
+    height: 373px;
 }
 
 .cards .card .info {
