@@ -230,6 +230,7 @@ svg#phases {
 
 #statssvg1 rect {
 	fill: #d24633;
+	cursor: pointer; 
 }
 
 #statssvg1 text,
@@ -237,18 +238,12 @@ svg#phases {
 	fill: #7e4e48;
 }
 
-#overviewsvg1 text {
-	cursor: pointer;
-}
-
 #overviewsvg1 .user rect {
 	fill: #d24633;
-	cursor: pointer;
 }
 
 #overviewsvg1 .netherland rect {
 	fill: #2da3b6;
-	cursor: pointer;
 }
 
 /* ------------------------------*/
@@ -586,9 +581,15 @@ header.logoleft svg.logo {
 
 .cards .card-user .info .icon {
 	font-size: 1.5em;
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 4;
     left: -0.1em;
+}
+
+
+.card .card-user {
+	position: absolute;
+	z-index: 4;
 }
 
 .cards .card-stats {
@@ -651,8 +652,7 @@ header.logoleft svg.logo {
 .overview .chart {
 	position: relative;
 	float: left;
-	margin-left: 1.5em;
-    margin-top: 0.25em;
+	margin-left: 1em;
 }
 
 /* ------------------------------*/
