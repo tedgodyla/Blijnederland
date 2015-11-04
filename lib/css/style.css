@@ -238,12 +238,19 @@ svg#phases {
 	fill: #7e4e48;
 }
 
+#overviewsvg1 text:hover {
+	fill: #000;
+	cursor: pointer;
+}
+
 #overviewsvg1 .user rect {
 	fill: #d24633;
+	cursor: pointer;
 }
 
 #overviewsvg1 .netherland rect {
 	fill: #2da3b6;
+	cursor: pointer;
 }
 
 /* ------------------------------*/
@@ -302,7 +309,6 @@ header.logoleft svg.logo {
 	width: 1080px;
 	padding: 0 1em;
 	margin: auto;
-	overflow-x: hidden;
 }
 
 /* ------------------------------*/
@@ -662,23 +668,89 @@ header.logoleft svg.logo {
 .overview .chart {
 	position: relative;
 	float: left;
-	margin-left: 1em;
+	margin-left: 1.5em;
+
+	transition: 0.6s ease-in-out;
+}
+
+.overview.active-subject .chart {
+	width: 110px !important;
+}
+
+.overview.active-subject .chart span {
+	opacity: 0;
+}
+
+.overview .chart span {
+	position: absolute;
+    top: -1.5em;
+    color: #7e4e48;
+    opacity: 1;
+
+    transition: 0.4s;
+}
+
+.overview .chart span.nul {
+	left: 110px;
+}
+
+.overview .chart span.tien {
+	right: 0px;
+}
+
+.overview .chart #overviewsvg1 {
+	overflow: hidden;
+    border-right: dashed 1px rgba(0,0,0,0.15);
 }
 
 /* ------------------------------*/
 /* ---------- SUBJECT ---------- */
 /* ------------------------------*/
 
-.subject {
+.overview .subject {
     position: relative;
+    top: -5em;
     width: 0px;
     overflow: hidden;
     float: right;
-    background: #b9e7d4;
-    padding: 1em 0;
+    background: #e8c3af;
     border-radius: 1em;
-    top: 1em;
+
+    transition: 0.6s ease-in-out;
 }
+
+.overview.active-subject .subject {
+    width: 50%;
+}
+
+.overview .subject h1 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+.overview .subject .close {
+	position: absolute;
+    right: 1.2em;
+    top: 1.2em;
+    cursor: pointer;
+}
+
+.overview .subject .close svg {
+	width: 1.5em;
+}
+
+.overview .subject article {
+	display: none;
+}
+
+.overview .subject.social .social { display: block; }
+.overview .subject.religie .religie { display: block; }
+.overview .subject.werk .werk { display: block; }
+.overview .subject.gezondheid .gezondheid { display: block; }
+.overview .subject.participatie .participatie { display: block; }
+.overview .subject.veiligheid .veiligheid { display: block; }
+.overview .subject.gelukkigheid .gelukkigheid { display: block; }
+
 
 /* ------------------------------*/
 /* ---------- SPECIAL ---------- */
