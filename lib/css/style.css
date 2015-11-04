@@ -92,17 +92,28 @@ input[type="submit"],
 	transition: all 0.2s;
 }
 
+
+
+
+.req {
+	border: 1.5px solid #e34f42;
+/*	background-color: #ede9dc;*/
+	transition: .4s;
+
+}
 input {
 	font-family: 'Roboto Slab', serif;
     background: #fff;
     font-size: 1em;
     color: #4abea4;
-    border: none;
+    border: 1.5px solid white;
+  /*  border: none;*/
     border-radius: 0.5em;
     padding: 0.2em 0.6em;
     display: inline-block;
     box-sizing: border-box;
     outline: none;
+    	transition: .4s;
 }
 
 input:not([type="submit"]):focus {
@@ -203,7 +214,7 @@ svg {
 svg#phases {
 	width: 45%;
 	margin-top: -11em;
-	margin-left: 7em;
+	margin-left: 0em;
 }
 
 .axis {
@@ -552,16 +563,20 @@ header.logoleft svg.logo {
     margin-top: -2.5em;
 }
 
-.cards .card .photo .phase_1_m { margin-left: -0.5em; }
+
+.left #phases {
+	margin-left: 7em;
+}
+.cards .card .photo .phase_1_m { margin-left: -0.5em; margin-top: -5em; }
 .cards .card .photo .phase_2_m { margin-left: -0.5em; }
-.cards .card .photo .phase_3_m { margin-left: -0.5em; }
-.cards .card .photo .phase_4_m { margin-left: -0.5em; }
+.cards .card .photo .phase_3_m { margin-left: -0.5em; margin-top: 2em;}
+.cards .card .photo .phase_4_m { margin-left: -0.5em; margin-top: 2em;}
 .cards .card .photo .phase_5_m { margin-left: -0.5em; }
-.cards .card .photo .phase_1_f { margin-left: -0.5em; }
-.cards .card .photo .phase_2_f { margin-left: -0.5em; }
+.cards .card .photo .phase_1_f { margin-left: -0.5em; margin-top: -6em;}
+.cards .card .photo .phase_2_f { margin-left:  0em; margin-top: -2em;}
 .cards .card .photo .phase_3_f { margin-left: -0.5em; }
 .cards .card .photo .phase_4_f { margin-left: -0.5em; }
-.cards .card .photo .phase_5_f { margin-left: -0.5em; }
+.cards .card .photo .phase_5_f { margin-left: -0.5em; margin-top: -2em; }
 
 .cards .card .info {
 	position: absolute;
