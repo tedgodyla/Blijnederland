@@ -48,7 +48,7 @@
 					</form>
 				</section>
 			</article>
-			<p class="disclaimer">Disclaimer: alle gegevens die ingevoerd worden zullen opgeslagen worden. Uw naam zal niet gedeeld worden met derden of publiek gesteld worden.</p>
+			<p class="disclaimer">Disclaimer: alle gegevens die ingevoerd worden zullen opgeslagen worden. Uw identiteit blijft anoniem en zal niet gedeeld worden met derden of publiek gesteld worden.</p>
 		</div>
 		<div class="clear"></div>
 	</section>
