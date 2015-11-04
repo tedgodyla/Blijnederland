@@ -40,7 +40,7 @@
 	<section class="cards pushtop">
 		<section class="card card-user">
 			<section class="photo">
-				<div id="profilesvg"></div>
+				<div id="profilesvg1"></div>
 			</section>
 			<section class="info">
 				<span class="icon"></span>
