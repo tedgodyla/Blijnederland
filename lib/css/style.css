@@ -230,7 +230,6 @@ svg#phases {
 
 #statssvg1 rect {
 	fill: #d24633;
-	cursor: pointer; 
 }
 
 #statssvg1 text,
@@ -238,12 +237,18 @@ svg#phases {
 	fill: #7e4e48;
 }
 
+#overviewsvg1 text {
+	cursor: pointer;
+}
+
 #overviewsvg1 .user rect {
 	fill: #d24633;
+	cursor: pointer;
 }
 
 #overviewsvg1 .netherland rect {
 	fill: #2da3b6;
+	cursor: pointer;
 }
 
 /* ------------------------------*/
@@ -646,7 +651,8 @@ header.logoleft svg.logo {
 .overview .chart {
 	position: relative;
 	float: left;
-	margin-left: 1em;
+	margin-left: 1.5em;
+    margin-top: 0.25em;
 }
 
 /* ------------------------------*/
