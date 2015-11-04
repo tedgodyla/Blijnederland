@@ -39,6 +39,23 @@
 
 	<section class="cards pushtop">
 		<section class="card card-user">
+
+			<div class="edit">
+							<input id="geslachtNlUni" value="uni" data-icon="female" type="button" name="edit">
+							<label for="geslachtNlUni">
+								<div class="bg"></div>
+								<div class="icon icon-female"></div>
+							</label>
+			</div>
+
+
+			<div class="share">
+							<input id="share" value="uni" data-icon="female" type="button" name="share">
+							<label for="geslachtNlUni">
+								<div class="bg"></div>
+								<div class="icon icon-female"></div>
+							</label>
+			</div>
 			<section class="photo">
 				<div id="profilesvg1"></div>
 			</section>
