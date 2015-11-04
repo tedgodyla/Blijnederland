@@ -92,17 +92,28 @@ input[type="submit"],
 	transition: all 0.2s;
 }
 
+
+
+
+.req {
+	border: 1.5px solid #e34f42;
+/*	background-color: #ede9dc;*/
+	transition: .4s;
+
+}
 input {
 	font-family: 'Roboto Slab', serif;
     background: #fff;
     font-size: 1em;
     color: #4abea4;
-    border: none;
+    border: 1.5px solid white;
+  /*  border: none;*/
     border-radius: 0.5em;
     padding: 0.2em 0.6em;
     display: inline-block;
     box-sizing: border-box;
     outline: none;
+    	transition: .4s;
 }
 
 input:not([type="submit"]):focus {
