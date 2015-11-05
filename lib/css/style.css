@@ -900,7 +900,7 @@ header.logoleft svg.logo {
 	opacity: 0;
 }
 
-.overview .subject.sociaal article.sociaal,
+.overview .subject.social article.social,
 .overview .subject.religie article.religie,
 .overview .subject.werk article.werk,
 .overview .subject.gezondheid article.gezondheid,
@@ -908,7 +908,7 @@ header.logoleft svg.logo {
 .overview .subject.veiligheid article.veiligheid,
 .overview .subject.gelukkigheid article.gelukkigheid { opacity: 1; height: 100%;}
 
-.overview .subject.sociaal article.sociaal .vijf,
+.overview .subject.social article.social .vijf,
 .overview .subject.religie article.religie .vijf,
 .overview .subject.werk article.werk .vijf,
 .overview .subject.gezondheid article.gezondheid .vijf,

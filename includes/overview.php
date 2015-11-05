@@ -62,13 +62,13 @@
 						<line fill="none" stroke="#e34f42" stroke-width="3" stroke-miterlimit="10" x1="30.761" y1="31" x2="0.846" y2="1.085"/>
 					</svg>
 				</div>
-				<article class="sociaal">
+				<article class="social">
 					<h1>Sociaal  &amp; geluk</h1>
 					<p>Het geluk van Nederlanders naar hoeveelheid social contact</p>
 					<span class="nul">0</span>
 					<span class="vijf">5</span>
 					<span class="tien">10</span>
-					<div id="sociaalsvg1" class="chartsvg"></div>
+					<div id="socialsvg1" class="chartsvg"></div>
 				</article>
 				<article class="religie">
 					<h1>Religie  &amp; geluk</h1>
