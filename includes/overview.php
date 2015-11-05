@@ -57,9 +57,9 @@
 						<line fill="none" stroke="#e34f42" stroke-width="3" stroke-miterlimit="10" x1="30.761" y1="31" x2="0.846" y2="1.085"/>
 					</svg>
 				</div>
-				<article class="social">
-					<h1>Social</h1>
-					<div id="socialsvg1"></div>
+				<article class="sociaal">
+					<h1>Sociaal</h1>
+					<div id="sociaalsvg1"></div>
 					<div class="carousel">
 					    <div>
 					    	<?php include("includes/svg/smoking.php"); ?>

@@ -919,22 +919,18 @@ header.logoleft svg.logo {
 }
 
 .overview .subject article {
-	height: 100%;
+	height: 0px;
 	width: 100%;
 	overflow: hidden;
 }
 
-.overview.active-subject .subject article {
-	height: 0px;
-}
-
-.overview .subject.social .social { opacity: 1; height: 100%;}
-.overview .subject.religie .religie { opacity: 1; height: 100%;}
-.overview .subject.werk .werk { opacity: 1; height: 100%;}
-.overview .subject.gezondheid .gezondheid { opacity: 1; height: 100%;}
-.overview .subject.participatie .participatie { opacity: 1; height: 100%;}
-.overview .subject.veiligheid .veiligheid { opacity: 1; height: 100%;}
-.overview .subject.gelukkigheid .gelukkigheid { opacity: 1; height: 100%;}
+.overview .subject.sociaal article.sociaal { opacity: 1; height: 100%;}
+.overview .subject.religie article.religie { opacity: 1; height: 100%;}
+.overview .subject.werk article.werk { opacity: 1; height: 100%;}
+.overview .subject.gezondheid article.gezondheid { opacity: 1; height: 100%;}
+.overview .subject.participatie article.participatie { opacity: 1; height: 100%;}
+.overview .subject.veiligheid article.veiligheid { opacity: 1; height: 100%;}
+.overview .subject.gelukkigheid article.gelukkigheid { opacity: 1; height: 100%;}
 
 
 /* ------------------------------*/
