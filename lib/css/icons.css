@@ -39,7 +39,10 @@
 }
 
 .icon-metro-sign:before {
-  content: "a";
+  content: "f";
+  position: relative;
+  font-size: 26px;
+  top: 0.1em;
 }
 .icon-woman:before {
   position: relative;
