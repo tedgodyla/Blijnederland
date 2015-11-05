@@ -13,7 +13,7 @@
 		}
 	},
 	"questions": {
-		"Sociaal": {
+		"Social": {
 			"familie": {
 				"label": "Hoe vaak spreek je af met je (beste) vrienden?",
 				"type": "radio",
