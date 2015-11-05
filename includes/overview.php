@@ -79,6 +79,8 @@
 				</article>
 				<article class="religie">
 					<h1>Religie</h1>
+					<span class="nul">0</span>
+					<span class="tien">10</span>
 					<div id="religiesvg1"></div>
 				</article>
 			</div>

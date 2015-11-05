@@ -39,18 +39,12 @@
 }
 
 .icon-metro-sign:before {
-<<<<<<< HEAD
   content: "f";
   position: relative;
   font-size: 26px;
   top: 0.1em;
-=======
-  position: relative;
-  top: -0.0em;
-  font-size: 26px;
-  content: "a";
->>>>>>> origin/master
 }
+
 .icon-woman:before {
   position: relative;
   top: -0.0em;
