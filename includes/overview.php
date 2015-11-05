@@ -11,22 +11,22 @@
 				<section class="q">
 					<form action="" method="post" name="geslachtnl" id="geslachtnlform" class="geslachtnlform">
 						<div class="radiobutton">
-							<input id="geslachtNlMan" value="man" data-icon="male" type="radio" name="geslacht" checked="">
+							<input id="geslachtNlMan" value="man" data-icontest="male" type="radio" name="geslacht" checked="">
 							<label for="geslachtNlMan">
 								<div class="bg"></div>
 								<div class="icon icon-male"></div>
 							</label>
 						</div>
 						<div class="radiobutton">
-							<input id="geslachtNlVrouw" value="vrouw" data-icon="female" type="radio" name="geslacht">
+							<input id="geslachtNlVrouw" value="vrouw" data-icontest="female" type="radio" name="geslacht">
 							<label for="geslachtNlVrouw">
 								<div class="bg"></div>
 								<div class="icon icon-woman"></div>
 							</label>
 						</div>
 						<div class="radiobutton">
-							<input id="geslachtNlUni" value="uni" data-icon="metro" type="radio" name="geslacht">
-							<label for="geslachtNlUni">
+							<input id="geslachtNlMetro" value="uni" data-icontest="metro" type="radio" name="geslacht">
+							<label for="geslachtNlMetro">
 								<div class="bg"></div>
 								<div class="icon icon-metro-sign"></div>
 							</label>

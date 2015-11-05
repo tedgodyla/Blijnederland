@@ -39,13 +39,16 @@
 }
 
 .icon-metro-sign:before {
+  position: relative;
+  top: -0.0em;
+  font-size: 26px;
   content: "a";
 }
 .icon-woman:before {
   position: relative;
-  content: "b";
   top: -0.0em;
   font-size: 26px;
+  content: "b";
 }
 .icon-male:before {
   position: relative;
