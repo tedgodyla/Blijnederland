@@ -109,6 +109,8 @@ function change(data) {
 	var slice = svg1.select(".slices").selectAll("path.slice")
 		.data(pie(data), key);
 
+	console.log(pie(data));
+
 	slice.enter()
 		.insert("path")
 		.style("fill", function(d) { return color(d.data.label); })

@@ -268,61 +268,53 @@ svg#phases {
 	cursor: pointer;
 }
 
-#overviewsvg1 .user rect {
+#overviewsvg1 .barsUser rect {
 	fill: #d24633;
 	cursor: pointer;
 }
 
-#overviewsvg1 .netherland rect {
+#overviewsvg1 .barsNl rect {
 	fill: #2da3b6;
 	cursor: pointer;
 }
 
-#religiesvg1 rect {
+.subject article .chartsvg rect {
 	fill: #d24633;
 }
 
-#religiesvg1 .hightlight rect {
+.subject article .chartsvg .hightlight rect {
 	fill: #2da3b6;
 }
 
-#religiesvg1 {
+.subject article .chartsvg {
 	border-right: dashed 1px rgba(0,0,0,0.15);
 	margin-top: 1em;
 }
 
-.religie .tien {
+.subject article .tien {
 	float: right;
 	color: #7e4e48;
 }
 
-.religie .vijf {
+.subject article .vijf {
 	position: absolute;
 	right: 50%;
-    transform: translateX(+55px);
+    transform: translateX(+65px);
 }
 
-.religie .vijflijn {
-	position: absolute;
-    top: 0; bottom: 0;
-    right: 50%;
-    transform: translateX(+51px);
-    border-right: dashed 1px rgba(0,0,0,0.15);
-}
-
-.religie .nul {
-	margin-left: 120px;
+.subject article .nul {
+	margin-left: 140px;
 	color: #7e4e48;
 }
 
-.religie p.legend {
+.subject article p.legend {
 	text-align: right;
     margin: 1.5em 0 0;
     font-size: 1em;
     color: #2da3b6;
 }
 
-.religie p.legend span {
+.subject article p.legend span {
 	position: relative;
 	top: 0.15em;
 	display: inline-block;
@@ -369,6 +361,7 @@ header svg.logo {
     height: 50px;
     width: 150px;
     padding-top: 2em;
+    cursor: pointer;
 }
 
 header.logoleft svg.logo {
