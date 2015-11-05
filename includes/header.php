@@ -9,12 +9,16 @@
 	<meta name="robots" content="" />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700' rel='stylesheet' type='text/css'>
+	
 	<link href="lib/css/reset.css" rel="stylesheet">
 	<link href="lib/css/jquery-ui.css" rel="stylesheet">
 	<link href="lib/css/jquery-ui.structure.css" rel="stylesheet">
+	<link href="lib/css/slick.css" rel="stylesheet">
+  	<link href="lib/css/slick-theme.css" rel="stylesheet">
 	<link href="lib/css/icons.css" rel="stylesheet">
 	<link href="lib/css/style.css" rel="stylesheet">
 	<link href="lib/css/styleCharacters.css" rel="stylesheet" >
+
 	<!--[if lt IE 9]>
 		<script src="lib/js/html5shim.js"></script>
 	<![endif]-->
@@ -25,6 +29,8 @@
 	<script src="lib/js/events.js"></script>
 	<script src="lib/js/d3.min.js"></script>
     <script src="lib/js/d3.layout.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  	<script src="lib/js/slick.min.js"></script>
 	<script src="lib/js/animation.js"></script>
 	<script src="lib/js/charts.js"></script>
 	<script src="lib/js/interaction.js"></script>

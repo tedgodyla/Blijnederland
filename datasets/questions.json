@@ -40,7 +40,7 @@
 			"welke": {
 				"label": "Tot welke religie behoor je?",
 				"type": "select",
-				"options": ["Geen", "Rooms-katholiek", "Nederlands hervormd", "Gereformeerd", "Protestantse Kerk", "Islam", "Boeddhisme", "Anders"]
+				"options": ["Geen", "Katholiek", "Hervormd", "Gereformeerd", "Protestants", "Islam", "Boeddhisme", "Anders"]
 			},
 			"waarde" : {
 				"label": "Hoe actief ben je bezig met het geloof?",

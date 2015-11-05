@@ -1,0 +1,36 @@
+
+body {
+	color: white;
+	font-family: "Roboto Slab";
+}
+
+svg {
+	width: 50%;
+}
+.nummer {
+	color:	white;
+}
+
+.name {
+	font-weight: 900;
+	color:	#b9e7d4;
+}
+
+table {
+	padding: 3em;
+	border-radius: 20px
+}
+.container {
+	background-color: #4abea4;
+	width: 20%;
+	float: right;
+	margin-right: 15em;
+	border-radius: 20px;
+}
+
+h1 {
+	font-size: 14px;	
+	padding: 1em 1em 0em 1em;
+	margin-bottom: -3.2em;
+	text-align: center;
+}
