@@ -11,22 +11,22 @@
 				<section class="q">
 					<form action="" method="post" name="geslachtnl" id="geslachtnlform" class="geslachtnlform">
 						<div class="radiobutton">
-							<input id="geslachtNlMan" value="man" data-icon="male" type="radio" name="geslacht" checked="">
+							<input id="geslachtNlMan" value="man" data-icontest="male" type="radio" name="geslacht" checked="">
 							<label for="geslachtNlMan">
 								<div class="bg"></div>
 								<div class="icon icon-male"></div>
 							</label>
 						</div>
 						<div class="radiobutton">
-							<input id="geslachtNlVrouw" value="vrouw" data-icon="female" type="radio" name="geslacht">
+							<input id="geslachtNlVrouw" value="vrouw" data-icontest="female" type="radio" name="geslacht">
 							<label for="geslachtNlVrouw">
 								<div class="bg"></div>
 								<div class="icon icon-woman"></div>
 							</label>
 						</div>
 						<div class="radiobutton">
-							<input id="geslachtNlUni" value="uni" data-icon="metro" type="radio" name="geslacht">
-							<label for="geslachtNlUni">
+							<input id="geslachtNlMetro" value="uni" data-icontest="metro" type="radio" name="geslacht">
+							<label for="geslachtNlMetro">
 								<div class="bg"></div>
 								<div class="icon icon-metro-sign"></div>
 							</label>
@@ -48,23 +48,39 @@
 		<div id="overviewsvg1"></div>
 	</section>
 	<section class="subject">
-		<div class="p10">
-			<div class="close">
-				<svg id="close" x="0px" y="0px"
-					 width="32px" height="32px" viewBox="0 0 32 32">
-					<line fill="none" stroke="#e34f42" stroke-width="3" stroke-miterlimit="10" x1="0.845" y1="31" x2="30.761" y2="1.085"/>
-					<line fill="none" stroke="#e34f42" stroke-width="3" stroke-miterlimit="10" x1="30.761" y1="31" x2="0.846" y2="1.085"/>
-				</svg>
+		<section class="subject-wrap">
+			<div class="p10">
+				<div class="close">
+					<svg id="close" x="0px" y="0px"
+						 width="32px" height="32px" viewBox="0 0 32 32">
+						<line fill="none" stroke="#e34f42" stroke-width="3" stroke-miterlimit="10" x1="0.845" y1="31" x2="30.761" y2="1.085"/>
+						<line fill="none" stroke="#e34f42" stroke-width="3" stroke-miterlimit="10" x1="30.761" y1="31" x2="0.846" y2="1.085"/>
+					</svg>
+				</div>
+				<article class="social">
+					<h1>Social</h1>
+					<div id="socialsvg1"></div>
+					<div class="carousel">
+					    <div>
+					    	<?php include("includes/svg/smoking.php"); ?>
+					    	<h3>Rokers zijn gelukkiger! Roken heeft echter ook een mindere kant; roken is dodelijk en het stinkt!</h3>
+					    </div>
+					    <div>
+					    	<?php include("includes/svg/beer.php"); ?>
+					    	<h3>Drinkers zijn gelukkiger dan mensen die geen acohol drinken. Drink met mate pik!</h3>
+					    </div>
+					    <div>
+					    	<?php include("includes/svg/healthy.php"); ?>
+					    	<h3>Gezonde mensen zijn gelukkiger en meer tevreden met hun leven. Vanaf nu alleen maar gezonde snacks.</h3>
+					    </div>
+					</div>
+				</article>
+				<article class="religie">
+					<h1>Religie</h1>
+					<div id="religiesvg1"></div>
+				</article>
 			</div>
-			<article class="social">
-				<h1>Social</h1>
-				<div id="socialsvg1"></div>
-			</article>
-			<article class="religie">
-				<h1>Religie</h1>
-				<div id="religiesvg1"></div>
-			</article>
-		</div>
+		</section>
 	</section>
 	<div class="clear"></div>
 </section>

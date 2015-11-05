@@ -897,6 +897,11 @@ header.logoleft svg.logo {
     width: 50%;
 }
 
+.overview .subject .subject-wrap {
+	position: relative;
+	display: block;
+}
+
 .overview .subject h1 {
 	font-size: 2em;
 	margin-bottom: 1em;
@@ -914,16 +919,22 @@ header.logoleft svg.logo {
 }
 
 .overview .subject article {
-	display: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
-.overview .subject.social .social { display: block; }
-.overview .subject.religie .religie { display: block; }
-.overview .subject.werk .werk { display: block; }
-.overview .subject.gezondheid .gezondheid { display: block; }
-.overview .subject.participatie .participatie { display: block; }
-.overview .subject.veiligheid .veiligheid { display: block; }
-.overview .subject.gelukkigheid .gelukkigheid { display: block; }
+.overview.active-subject .subject article {
+	height: 0px;
+}
+
+.overview .subject.social .social { opacity: 1; height: 100%;}
+.overview .subject.religie .religie { opacity: 1; height: 100%;}
+.overview .subject.werk .werk { opacity: 1; height: 100%;}
+.overview .subject.gezondheid .gezondheid { opacity: 1; height: 100%;}
+.overview .subject.participatie .participatie { opacity: 1; height: 100%;}
+.overview .subject.veiligheid .veiligheid { opacity: 1; height: 100%;}
+.overview .subject.gelukkigheid .gelukkigheid { opacity: 1; height: 100%;}
 
 
 /* ------------------------------*/
@@ -1036,6 +1047,29 @@ header.logoleft svg.logo {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	color: #4abea4;
+}
+
+/* ------------------------------*/
+/* ---------- CAROUSEL ---------- */
+/* ------------------------------*/
+
+.slick-initialized .slick-slide {
+	outline: none;
+}
+
+.carousel svg {
+	position: relative;
+	display: block;
+	width: 30%;
+	height: 30%;
+	margin: 0 auto 2em;
+}
+
+.carousel h3 {
+	font-size: 1.1em;
+	padding: 0 1em;
+	text-align: center;
+	color: #7e4e48;
 }
 
 /* ------------------------------*/
