@@ -9,11 +9,11 @@
 		"geslacht": {
 			"type": "radiobutton",
 			"options": ["Man", "Vrouw"],
-			"icons": ["male", "female"]
+			"icons": ["male", "woman"]
 		}
 	},
 	"questions": {
-		"Social": {
+		"Sociaal": {
 			"familie": {
 				"label": "Hoe vaak spreek je af met je (beste) vrienden?",
 				"type": "radio",
@@ -25,7 +25,7 @@
 				]
 			},
 			"vrienden": {
-				"label": "Hoe vaak zie jouw directe familie?",
+				"label": "Hoe vaak zie je jouw directe familie?",
 				"type": "radio",
 				"options": [ 
 					{ "Meerdere keren per week": 10 },
@@ -43,7 +43,7 @@
 				"options": ["Geen", "Katholiek", "Hervormd", "Gereformeerd", "Protestants", "Islam", "Boeddhisme", "Anders"]
 			},
 			"waarde" : {
-				"label": "Hoe vaak in het jaar ben je bezig met geloof?",
+				"label": "Hoe actief ben je bezig met het geloof?",
 				"type": "radio",
 				"options": [
 					{ "Elke week of meer": 10 }, 
@@ -56,7 +56,7 @@
 
 		"Werk": {
 			"baan": {
-				"label": "Heb jij een baan?",
+				"label": "Heb je een baan?",
 				"type": "radio",
 				"options": [
 					{ "Ja": 10 },
@@ -79,7 +79,7 @@
 
 		"Gezondheid": {
 			"sport": {
-				"label": "Hoevaak sport je?",
+				"label": "Hoe vaak sport je?",
 				"type": "radio",
 				"options": [
 					{ "Dagelijks": 10 },
@@ -102,7 +102,7 @@
 
 		"Participatie": {
 			"stemmen": {
-				"label": "Stem jij voor de verkiezingen?",
+				"label": "Stem je bij de verkiezingen?",
 				"type": "radio",
 				"options": [
 					{ "Ja": 10 }, 
@@ -113,7 +113,7 @@
 				"label": "Doe je aan vrijwilligerswerk?",
 				"type": "radio",
 				"options": [
-					{ "Allen maar": 10 },
+					{ "Alleen maar": 10 },
 					{ "Regelmatig": 7 },
 					{ "Soms": 4 },
 					{ "Nee": 1 }

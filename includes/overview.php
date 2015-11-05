@@ -7,6 +7,7 @@
 				</div>
 			</section>
 			<section class="info">
+				
 				<section class="q">
 					<form action="" method="post" name="geslachtnl" id="geslachtnlform" class="geslachtnlform">
 						<div class="radiobutton">
@@ -20,14 +21,14 @@
 							<input id="geslachtNlVrouw" value="vrouw" data-icon="female" type="radio" name="geslacht">
 							<label for="geslachtNlVrouw">
 								<div class="bg"></div>
-								<div class="icon icon-female"></div>
+								<div class="icon icon-woman"></div>
 							</label>
 						</div>
 						<div class="radiobutton">
-							<input id="geslachtNlUni" value="uni" data-icon="female" type="radio" name="geslacht">
+							<input id="geslachtNlUni" value="uni" data-icon="metro" type="radio" name="geslacht">
 							<label for="geslachtNlUni">
 								<div class="bg"></div>
-								<div class="icon icon-female"></div>
+								<div class="icon icon-metro-sign"></div>
 							</label>
 						</div>
 					</form>

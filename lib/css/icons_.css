@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "blijnederland";
-  src:url("../fonts/blijnederland.eot");
-  src:url("../fonts/blijnederland.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/blijnederland.woff") format("woff"),
-    url("../fonts/blijnederland.ttf") format("truetype"),
-    url("../fonts/blijnederland.svg#blijnederland") format("svg");
+  src:url("../icons/blijnederland.eot");
+  src:url("../icons/blijnederland.eot?#iefix") format("embedded-opentype"),
+    url("../icons/blijnederland.woff") format("woff"),
+    url("../icons/blijnederland.ttf") format("truetype"),
+    url("../icons/blijnederland.svg#blijnederland") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -38,28 +38,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-metro-sign:before {
-  content: "a";
-}
-.icon-woman:before {
-  position: relative;
+.icon-gear:before {
   content: "b";
-  top: -0.0em;
-  font-size: 26px;
+}
+.icon-check:before {
+  content: "f";
+}
+.icon-link-external:before {
+  content: "i";
 }
 .icon-male:before {
   position: relative;
-  top: 0.2em;
-  font-size: 26px;
-  content: "c";
-}
-.icon-social-facebook:before {
-  position: relative;
-  top: 0.15em;
-  content: "d";
-}
-.icon-pencil:before {
   top: 0.1em;
+  content: "o";
+}
+.icon-female:before {
   position: relative;
-  content: "e";
+  top: 0.1em;
+  content: "z";
+}
+.icon-plus:before {
+  content: "a";
+}
+.icon-three-bars:before {
+  content: "c";
 }
