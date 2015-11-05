@@ -1043,6 +1043,10 @@ header.logoleft svg.logo {
 	outline: none;
 }
 
+.slick-slider {
+	margin-top: 5em;
+}
+
 .carousel svg {
 	position: relative;
 	display: block;
@@ -1054,6 +1058,7 @@ header.logoleft svg.logo {
 .carousel h3 {
 	font-size: 1.1em;
 	padding: 0 1em;
+	margin-top: 3em;
 	text-align: center;
 	color: #7e4e48;
 }

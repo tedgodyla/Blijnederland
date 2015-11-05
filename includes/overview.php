@@ -83,15 +83,15 @@
 					<div class="carousel">
 					    <div>
 					    	<?php include("includes/svg/smoking.php"); ?>
-					    	<h3>Rokers zijn gelukkiger! Roken heeft echter ook een mindere kant; roken is dodelijk en het stinkt!</h3>
+					    	<h3> Het blijkt dat mensen die elke dag roken gelukkiger zijn dan mensen die nooit roken.</h3>
 					    </div>
 					    <div>
 					    	<?php include("includes/svg/beer.php"); ?>
-					    	<h3>Drinkers zijn gelukkiger dan mensen die geen acohol drinken. Drink met mate pik!</h3>
+					    	<h3> Mensen die af en toe een borreltje ophebben zijn gelukkiger dan mensen die nooit drinken.</h3>
 					    </div>
 					    <div>
 					    	<?php include("includes/svg/healthy.php"); ?>
-					    	<h3>Gezonde mensen zijn gelukkiger en meer tevreden met hun leven. Vanaf nu alleen maar gezonde snacks.</h3>
+					    	<h3> Mensen die zich gezond voelen zijn gelukkiger. </h3>
 					    </div>
 					</div>
 				</article>
