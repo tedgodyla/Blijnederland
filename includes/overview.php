@@ -64,18 +64,28 @@
 				</div>
 				<article class="sociaal">
 					<h1>Sociaal  &amp; geluk</h1>
-				</article>
-				<article class="religie">
-					<h1>Religie  &amp; geluk</h1>
-					<p>Het gemiddelde geluk van de Nederlands per geloof</p>
+					<p>Het geluk van Nederlanders naar hoeveelheid social contact</p>
 					<span class="nul">0</span>
 					<span class="vijf">5</span>
 					<span class="tien">10</span>
-					<div id="religiesvg1"></div>
+					<div id="sociaalsvg1" class="chartsvg"></div>
+				</article>
+				<article class="religie">
+					<h1>Religie  &amp; geluk</h1>
+					<p>Het geluk van Nederlanders naar geloof</p>
+					<span class="nul">0</span>
+					<span class="vijf">5</span>
+					<span class="tien">10</span>
+					<div id="religiesvg1" class="chartsvg"></div>
 					<p class="legend">Jouw opgegeven geloof<span class="color"></span></p>
 				</article>
 				<article class="werk">
 					<h1>Werk  &amp; geluk</h1>
+					<p>Het geluk van Nederlanders naar tevredenheid over inkomen</p>
+					<span class="nul">0</span>
+					<span class="vijf">5</span>
+					<span class="tien">10</span>
+					<div id="werksvg1" class="chartsvg"></div>
 				</article>
 				<article class="gezondheid">
 					<h1>Gezondheid &amp; geluk</h1>
