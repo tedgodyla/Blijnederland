@@ -20,7 +20,6 @@
 			?>
 			<article class="q-group">
 				<h2 class="q-group-title"><?= $subject; ?>  </h2>
-			
 				<div class="arrow"></div> 
 				<section class="q-group-questions">
 					<form action="" method="post" name="<?= $subject; ?>" id="qform" class="qform">
@@ -43,7 +42,8 @@
 		<section class="card card-user">
 			<section class="geluk">
 				<div class="fill"></div>
-				<div class="text"></div>
+				<div class="text">Geluk</div>
+				<div class="tooltip">10%</div>
 			</section>
 			<div class="edit icon icon-pencil"></div>
 			<div class="share icon icon-social-facebook"></div>

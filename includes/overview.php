@@ -3,7 +3,8 @@
 		<section class="card card-nl">
 			<section class="geluk">
 				<div class="fill"></div>
-				<div class="text"></div>
+				<div class="text">Geluk</div>
+				<div class="tooltip">10%</div>
 			</section>
 			<section class="photo">
 				<div id="nlsvg1"></div>
@@ -46,8 +47,10 @@
 	</section>
 	<section class="chart">
 		<span class="nul">0</span>
+		<span class="vijf">5</span>
 		<span class="tien">10</span>
 		<div id="overviewsvg1"></div>
+		<div class="vijflijn"></div>
 	</section>
 	<section class="subject">
 		<section class="subject-wrap">
@@ -60,8 +63,23 @@
 					</svg>
 				</div>
 				<article class="sociaal">
-					<h1>Sociaal</h1>
-					<div id="sociaalsvg1"></div>
+					<h1>Sociaal  &amp; geluk</h1>
+				</article>
+				<article class="religie">
+					<h1>Religie  &amp; geluk</h1>
+					<p>Het gemiddelde geluk van de Nederlands per geloof</p>
+					<span class="nul">0</span>
+					<span class="vijf">5</span>
+					<span class="tien">10</span>
+					<div id="religiesvg1"></div>
+					<p class="legend">Jouw opgegeven geloof<span class="color"></span></p>
+				</article>
+				<article class="werk">
+					<h1>Werk  &amp; geluk</h1>
+				</article>
+				<article class="gezondheid">
+					<h1>Gezondheid &amp; geluk</h1>
+					<div id="gezondheidsvg1"></div>
 					<div class="carousel">
 					    <div>
 					    	<?php include("includes/svg/smoking.php"); ?>
@@ -77,11 +95,11 @@
 					    </div>
 					</div>
 				</article>
-				<article class="religie">
-					<h1>Religie</h1>
-					<span class="nul">0</span>
-					<span class="tien">10</span>
-					<div id="religiesvg1"></div>
+				<article class="participatie">
+					<h1>Participatie  &amp; geluk</h1>
+				</article>
+				<article class="veiligheid">
+					<h1>Veiligheid  &amp; geluk</h1>
 				</article>
 			</div>
 		</section>

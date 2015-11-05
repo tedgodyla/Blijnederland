@@ -288,15 +288,49 @@ svg#phases {
 
 #religiesvg1 {
 	border-right: dashed 1px rgba(0,0,0,0.15);
-	margin-top:1em;
+	margin-top: 1em;
 }
 
 .religie .tien {
-	float:right;
+	float: right;
+	color: #7e4e48;
+}
+
+.religie .vijf {
+	position: absolute;
+	right: 50%;
+    transform: translateX(+55px);
+}
+
+.religie .vijflijn {
+	position: absolute;
+    top: 0; bottom: 0;
+    right: 50%;
+    transform: translateX(+51px);
+    border-right: dashed 1px rgba(0,0,0,0.15);
 }
 
 .religie .nul {
-	margin-left:120px;
+	margin-left: 120px;
+	color: #7e4e48;
+}
+
+.religie p.legend {
+	text-align: right;
+    margin: 1.5em 0 0;
+    font-size: 1em;
+    color: #2da3b6;
+}
+
+.religie p.legend span {
+	position: relative;
+	top: 0.15em;
+	display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: #2da3b6;
+    margin-left: 1em;
+    border-radius: 0.25em;
 }
 
 /* ------------------------------*/
@@ -622,6 +656,28 @@ header.logoleft svg.logo {
     height: 50%;
     background: #f39a3c;
     border-radius: 1em;
+
+    transition: 0.4s;
+}
+
+.cards .card .geluk .tooltip {
+	position: absolute;
+    top: -1.3em;
+    right: -0.3em;
+    font-size: 1.2em;
+    color: #f39a3c;
+}
+
+.cards .card .geluk .text {
+	position: absolute;
+    left: -0.5em;
+    bottom: 0em;
+    font-size: 0.8em;
+	font-family: 'Roboto Slab', serif;
+	color: #f39a3c;
+	opacity: 0.75;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
 }
 
 .cards .card .photo {
@@ -741,6 +797,7 @@ header.logoleft svg.logo {
 	position: relative;
 	float: left;
 	margin-left: 1.5em;
+	margin-top: 2em;
 
 	transition: 0.6s ease-in-out;
 }
@@ -750,6 +807,10 @@ header.logoleft svg.logo {
 }
 
 .overview.active-subject .chart span {
+	opacity: 0;
+}
+
+.overview.active-subject .chart .vijflijn {
 	opacity: 0;
 }
 
@@ -766,6 +827,11 @@ header.logoleft svg.logo {
 	left: 110px;
 }
 
+.overview .chart span.vijf {
+	right: 50%;
+    transform: translateX(+55px);
+}
+
 .overview .chart span.tien {
 	right: 0px;
 }
@@ -773,6 +839,15 @@ header.logoleft svg.logo {
 .overview .chart #overviewsvg1 {
 	overflow: hidden;
     border-right: dashed 1px rgba(0,0,0,0.15);
+}
+
+.overview .chart .vijflijn {
+	position: absolute;
+    top: 0; bottom: 0;
+    right: 50%;
+    transform: translateX(+51px);
+    border-right: dashed 1px rgba(0,0,0,0.15);
+    transition: 0.4s;
 }
 
 /* ------------------------------*/
@@ -801,7 +876,12 @@ header.logoleft svg.logo {
 }
 
 .overview .subject h1 {
-	font-size: 2em;
+	font-size: 1.8em;
+	margin-bottom: 0.8em;
+}
+
+.overview .subject p {
+	font-size: 1.1em;
 	margin-bottom: 1em;
 }
 
@@ -822,13 +902,25 @@ header.logoleft svg.logo {
 	overflow: hidden;
 }
 
-.overview .subject.sociaal article.sociaal { opacity: 1; height: 100%;}
-.overview .subject.religie article.religie { opacity: 1; height: 100%;}
-.overview .subject.werk article.werk { opacity: 1; height: 100%;}
-.overview .subject.gezondheid article.gezondheid { opacity: 1; height: 100%;}
-.overview .subject.participatie article.participatie { opacity: 1; height: 100%;}
-.overview .subject.veiligheid article.veiligheid { opacity: 1; height: 100%;}
+.overview .subject article .vijf {
+	opacity: 0;
+}
+
+.overview .subject.sociaal article.sociaal,
+.overview .subject.religie article.religie,
+.overview .subject.werk article.werk,
+.overview .subject.gezondheid article.gezondheid,
+.overview .subject.participatie article.participatie,
+.overview .subject.veiligheid article.veiligheid,
 .overview .subject.gelukkigheid article.gelukkigheid { opacity: 1; height: 100%;}
+
+.overview .subject.sociaal article.sociaal .vijf,
+.overview .subject.religie article.religie .vijf,
+.overview .subject.werk article.werk .vijf,
+.overview .subject.gezondheid article.gezondheid .vijf,
+.overview .subject.participatie article.participatie .vijf,
+.overview .subject.veiligheid article.veiligheid .vijf,
+.overview .subject.gelukkigheid article.gelukkigheid { opacity: 1;}
 
 
 /* ------------------------------*/
