@@ -300,6 +300,7 @@ svg#phases {
 	position: absolute;
 	right: 50%;
     transform: translateX(+65px);
+    color: #7e4e48;
 }
 
 .subject article .nul {
