@@ -735,6 +735,7 @@ header.logoleft svg.logo {
     z-index: 0;
     padding: 2em 1em 1em;
     top: -1em;
+    overflow: hidden;
 
     -webkit-border-bottom-right-radius: 1em;
 	-webkit-border-bottom-left-radius: 1em;
