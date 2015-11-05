@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
-	 height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<svg x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300">
 <g id="cigaret">
 	<g>
 		<rect x="78.285" y="210.767" fill="#D76927" width="29.967" height="88.233"/>
@@ -63,7 +59,7 @@
 			<path fill="#0E0E0E" d="M216.729,49.708h-17.572c-0.672,0-1.215,0.368-1.215,0.823s0.543,0.824,1.215,0.824h17.615
 				L216.729,49.708z"/>
 		</g>
-		<polygon fill="#0A0A0A" points="217.091,57.146 217.126,63.669 215.53,63.669 215.53,57.146 		"/>
+		<polygon fill="#0A0A0A" points="217.091,57.146 217.126,63.669 215.53,63.669 215.53,57.146"/>
 		<rect x="154.155" y="53.496" fill="#0F0F0F" width="15.162" height="7.299"/>
 	</g>
 </g>
