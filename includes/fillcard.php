@@ -14,8 +14,9 @@
 	<section class="questions">
 		<?php
 		$questions = $question_json->questions;
-
+		$i = 0;
 		foreach ($questions as $subject => $question) {
+			$submittext = ($subject == "Gelukkigheid") ? "Opslaan en vergelijk met Nederland": "Volgende";
 			?>
 			<article class="q-group">
 				<h2 class="q-group-title"><?= $subject; ?>  </h2>
@@ -28,34 +29,25 @@
 								echo print_question($question, $qkey);
 							}
 						?>
-						<input type="submit" value="volgende">
+						<input type="submit" value="<?= $submittext; ?>">
 					</form>
 				</section>
 			</article>
 			<?php
+			$i++;
 		}
 		?>	
 	</section>
 
 	<section class="cards pushtop">
 		<section class="card card-user">
+			<section class="geluk">
+				<div class="fill"></div>
+				<div class="text"></div>
+			</section>
+			<div class="edit icon icon-pencil"></div>
+			<div class="share icon icon-social-facebook"></div>
 
-			<div class="edit">
-							<input id="geslachtNlUni" value="uni" data-icon="female" type="button" name="edit">
-							<label for="geslachtNlUni">
-								<div class="bg"></div>
-								<div class="icon icon-pencil"></div>
-							</label>
-			</div>
-
-
-			<div class="share">
-							<input id="share" value="uni" data-icon="female" type="button" name="share">
-							<label for="geslachtNlUni">
-								<div class="bg"></div>
-								<div class="icon icon-social-facebook"></div>
-							</label>
-			</div>
 			<section class="photo">
 				<div id="profilesvg1"></div>
 			</section>

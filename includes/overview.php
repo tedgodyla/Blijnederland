@@ -1,10 +1,12 @@
 <section class="overview container pushtop">
 	<section class="cards">
 		<section class="card card-nl">
+			<section class="geluk">
+				<div class="fill"></div>
+				<div class="text"></div>
+			</section>
 			<section class="photo">
-				<div id="nlsvg1">
-
-				</div>
+				<div id="nlsvg1"></div>
 			</section>
 			<section class="info">
 				
