@@ -421,6 +421,27 @@ svg#phases {
 	cursor: pointer;
 }
 
+#religiesvg1 rect {
+	fill: #d24633;
+}
+
+#religiesvg1 .hightlight rect {
+	fill: #2da3b6;
+}
+
+#religiesvg1 {
+	border-right: dashed 1px rgba(0,0,0,0.15);
+	margin-top:1em;
+}
+
+.religie .tien {
+	float:right;
+}
+
+.religie .nul {
+	margin-left:120px;
+}
+
 /* ------------------------------*/
 /* ---------- INTRO ---------- */
 /* ------------------------------*/
@@ -888,7 +909,7 @@ header.logoleft svg.logo {
     width: 0px;
     overflow: hidden;
     float: right;
-    background: #e8c3af;
+    background: #e1dcce;
     border-radius: 1em;
 
     transition: 0.6s ease-in-out;
