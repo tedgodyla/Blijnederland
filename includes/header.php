@@ -62,6 +62,9 @@
 						</g>
 					</g>
 				</g>
+				<defs>
+					<style type="text/css">@import url(https://fonts.googleapis.com/css?family=Pacifico);</style>
+				</defs>
 			</svg>
 		</div>
 	</header>
